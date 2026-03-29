@@ -47,7 +47,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--font);overflow:hid
 /* ── TITLE ── */
 #title-screen{position:fixed;inset:0;z-index:100;transition:opacity 0.9s ease;display:none;align-items:center;justify-content:center;}
 #title-screen.fade-out{opacity:0;pointer-events:none;}
-#title-bg{position:absolute;inset:0;background-color:#ccd8e0;background-image:url('/static/reshiram_nobg.png');background-size:75%;background-position:center;background-repeat:no-repeat;}
+#title-bg{position:absolute;inset:0;background-color:#ccd8e0;background-image:url('./static/reshiram_nobg.png');background-size:75%;background-position:center;background-repeat:no-repeat;}
 #title-overlay{position:absolute;inset:0;background:rgba(180,200,215,0.08);}
 .title-content{position:relative;text-align:center;display:flex;flex-direction:column;align-items:center;gap:20px;}
 .title-eyebrow{font-family:var(--font);font-size:11px;font-weight:500;letter-spacing:6px;color:#4a5a68;text-transform:uppercase;}
@@ -78,8 +78,8 @@ body{background:var(--bg);color:var(--text);font-family:var(--font);overflow:hid
 
 /* ── LAYOUT ── */
 .main-layout{display:flex;flex:1;overflow:hidden;position:relative;}
-#reshiram-bg{position:absolute;inset:0;z-index:0;pointer-events:none;background-image:url('/static/reshiram_nobg.png');background-size:contain;background-position:center;background-repeat:no-repeat;opacity:0.12;filter:grayscale(1) contrast(3) brightness(3);}
-#reshiram-gloss{position:absolute;inset:0;z-index:0;pointer-events:none;background-image:url('/static/reshiram_nobg.png');background-size:contain;background-position:center;background-repeat:no-repeat;opacity:0.06;filter:saturate(2) brightness(2);mix-blend-mode:screen;}
+#reshiram-bg{position:absolute;inset:0;z-index:0;pointer-events:none;background-image:url('./static/reshiram_nobg.png');background-size:contain;background-position:center;background-repeat:no-repeat;opacity:0.12;filter:grayscale(1) contrast(3) brightness(3);}
+#reshiram-gloss{position:absolute;inset:0;z-index:0;pointer-events:none;background-image:url('./static/reshiram_nobg.png');background-size:contain;background-position:center;background-repeat:no-repeat;opacity:0.06;filter:saturate(2) brightness(2);mix-blend-mode:screen;}
 
 /* ── PAGES ── */
 .page{display:none;flex:1;overflow:hidden;}
@@ -472,7 +472,7 @@ async function init(){
   const loadScreen=document.getElementById('loading-screen');
   loadText.textContent='Loading Pokédex data...';
   loadBar.style.width='8%';
-  const res=await fetch('/static/martindex.json');
+  const res=await fetch('./static/martindex.json');
   allPokemon=await res.json();
   // Build lookup maps
   allPokemon.forEach(p=>{
