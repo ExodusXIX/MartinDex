@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Path to Mystery</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Exo+2:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<style>
+:root{
+  --bg:#12121a;--surface:#18181f;--surface2:#1e1e28;--surface3:#242430;
+  --border:#2a2a38;--border2:#34344a;
+  --dragon:#4fc3f7;--dragon-dim:rgba(79,195,247,0.08);
+  --text:#e8e8f2;--text2:#8888a8;--muted:#55556e;--gold:#ffd54f;
+  --font:'Exo 2',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--text);font-family:var(--font);overflow:hidden;height:100vh;width:100vw;}
+
+/* ── LOADING ── */
+#loading-screen{position:fixed;inset:0;z-index:200;background:#0a0a10;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;transition:opacity 0.6s ease;}
+#loading-screen.fade-out{opacity:0;pointer-events:none;}
+.loading-logo{font-family:'Press Start 2P',monospace;font-size:10px;color:var(--dragon);letter-spacing:2px;text-shadow:0 0 20px rgba(79,195,247,0.4);}
+.loading-bar-wrap{width:240px;height:3px;background:var(--border2);border-radius:2px;overflow:hidden;}
+.loading-bar{height:100%;width:0%;background:linear-gradient(90deg,var(--dragon),rgba(79,195,247,0.5));border-radius:2px;transition:width 0.3s ease;}
+.loading-text{font-family:var(--font);font-size:11px;font-weight:500;color:var(--muted);letter-spacing:2px;text-transform:uppercase;}
+
+/* ── AUTH SCREEN ── */
+#auth-screen{position:fixed;inset:0;z-index:150;display:none;align-items:center;justify-content:center;background:rgba(8,8,13,0.96);}
+#auth-screen.visible{display:flex;}
+.auth-card{background:var(--surface);border:1px solid var(--border2);border-radius:12px;padding:40px 36px;width:360px;display:flex;flex-direction:column;gap:20px;}
+.auth-title{font-family:'Press Start 2P',monospace;font-size:10px;color:var(--dragon);letter-spacing:2px;text-align:center;}
+.auth-subtitle{font-size:12px;color:var(--muted);text-align:center;letter-spacing:1px;}
+.auth-tabs{display:flex;gap:0;border:1px solid var(--border2);border-radius:6px;overflow:hidden;}
+.auth-tab{flex:1;padding:9px;text-align:center;font-size:12px;font-weight:600;color:var(--muted);cursor:pointer;transition:all 0.2s;letter-spacing:1px;}
+.auth-tab.active{background:var(--dragon);color:#000;}
+.auth-field{display:flex;flex-direction:column;gap:6px;}
+.auth-label{font-size:10px;font-weight:700;color:var(--text2);letter-spacing:2px;text-transform:uppercase;}
+.auth-input{background:var(--surface2);border:1px solid var(--border2);color:var(--text);padding:10px 14px;font-family:var(--font);font-size:14px;font-weight:500;outline:none;border-radius:6px;transition:border-color 0.2s;width:100%;}
+.auth-input:focus{border-color:var(--dragon);}
+.auth-btn{background:var(--dragon);border:none;color:#000;padding:12px;font-family:var(--font);font-size:13px;font-weight:800;cursor:pointer;border-radius:6px;letter-spacing:1px;text-transform:uppercase;transition:opacity 0.2s;width:100%;}
+.auth-btn:hover{opacity:0.85;}
+.auth-error{font-size:11px;color:#e05555;text-align:center;min-height:16px;}
+.auth-skip{font-size:11px;color:var(--muted);text-align:center;cursor:pointer;text-decoration:underline;}
+.auth-skip:hover{color:var(--text2);}
+
+/* ── TITLE ── */
+#title-screen{position:fixed;inset:0;z-index:100;transition:opacity 0.9s ease;display:none;align-items:center;justify-content:center;}
+#title-screen.fade-out{opacity:0;pointer-events:none;}
+#title-bg{position:absolute;inset:0;background-color:#ccd8e0;background-image:url('/static/reshiram_nobg.png');background-size:75%;background-position:center;background-repeat:no-repeat;}
+#title-overlay{position:absolute;inset:0;background:rgba(180,200,215,0.08);}
+.title-content{position:relative;text-align:center;display:flex;flex-direction:column;align-items:center;gap:20px;}
+.title-eyebrow{font-family:var(--font);font-size:11px;font-weight:500;letter-spacing:6px;color:#4a5a68;text-transform:uppercase;}
+.title-text{font-family:'Press Start 2P',monospace;font-size:clamp(18px,3.5vw,34px);line-height:1.5;background:linear-gradient(180deg,#0e0e1e 0%,#32324e 55%,#6a6a8a 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 0 1px rgba(100,100,150,0.9));}
+.title-enter-btn{font-family:var(--font);font-size:12px;font-weight:600;letter-spacing:3px;color:#3a4a58;background:rgba(150,180,200,0.15);border:1px solid rgba(100,130,155,0.3);padding:11px 32px;border-radius:4px;cursor:pointer;transition:all 0.3s;text-transform:uppercase;}
+.title-enter-btn:hover{background:rgba(150,180,200,0.25);border-color:rgba(100,130,155,0.5);color:#5a6a78;}
+
+/* ── APP ── */
+#app{display:none;height:100vh;width:100vw;flex-direction:column;}
+#app.visible{display:flex;}
+
+/* ── HEADER ── */
+.app-header{padding:0 22px;border-bottom:1px solid var(--border);display:flex;align-items:stretch;flex-shrink:0;background:var(--surface);position:relative;height:44px;}
+.app-header::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:1px;background:linear-gradient(90deg,var(--dragon) 0%,transparent 45%);opacity:0.3;}
+.header-brand{display:flex;align-items:center;gap:10px;margin-right:24px;}
+.app-title{font-family:'Press Start 2P',monospace;font-size:8px;color:var(--dragon);letter-spacing:1px;text-shadow:0 0 16px rgba(79,195,247,0.3);}
+.nav-tabs{display:flex;align-items:stretch;gap:0;flex:1;}
+.nav-tab{padding:0 20px;display:flex;align-items:center;font-size:12px;font-weight:600;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;transition:all 0.2s;letter-spacing:1px;text-transform:uppercase;}
+.nav-tab:hover{color:var(--text2);}
+.nav-tab.active{color:var(--dragon);border-bottom-color:var(--dragon);}
+.header-user{display:flex;align-items:center;gap:10px;margin-left:auto;}
+.user-badge{font-size:12px;font-weight:600;color:var(--text2);display:flex;align-items:center;gap:6px;}
+.user-badge span{color:var(--dragon);}
+.logout-btn{font-size:10px;font-weight:600;color:var(--muted);background:transparent;border:1px solid var(--border2);padding:4px 10px;border-radius:3px;cursor:pointer;letter-spacing:1px;text-transform:uppercase;transition:all 0.2s;}
+.logout-btn:hover{border-color:var(--muted);color:var(--text);}
+.login-btn{font-size:10px;font-weight:600;color:var(--dragon);background:transparent;border:1px solid rgba(79,195,247,0.3);padding:4px 10px;border-radius:3px;cursor:pointer;letter-spacing:1px;text-transform:uppercase;transition:all 0.2s;}
+.login-btn:hover{background:var(--dragon-dim);}
+
+/* ── LAYOUT ── */
+.main-layout{display:flex;flex:1;overflow:hidden;position:relative;}
+#reshiram-bg{position:absolute;inset:0;z-index:0;pointer-events:none;background-image:url('/static/reshiram_nobg.png');background-size:contain;background-position:center;background-repeat:no-repeat;opacity:0.12;filter:grayscale(1) contrast(3) brightness(3);}
+#reshiram-gloss{position:absolute;inset:0;z-index:0;pointer-events:none;background-image:url('/static/reshiram_nobg.png');background-size:contain;background-position:center;background-repeat:no-repeat;opacity:0.06;filter:saturate(2) brightness(2);mix-blend-mode:screen;}
+
+/* ── PAGES ── */
+.page{display:none;flex:1;overflow:hidden;}
+.page.active{display:flex;}
+
+/* ── SIDEBAR ── */
+.sidebar{width:240px;border-right:1px solid var(--border);display:flex;flex-direction:column;flex-shrink:0;position:relative;background:rgba(18,18,26,0.97);z-index:2;}
+.sidebar::after{content:'';position:absolute;top:0;right:-1px;bottom:0;width:1px;background:linear-gradient(180deg,var(--dragon) 0%,transparent 75%);opacity:0.15;}
+.search-area{padding:12px;border-bottom:1px solid var(--border);display:flex;flex-direction:column;gap:8px;}
+.search-row{display:flex;}
+.search-input{flex:1;background:var(--surface2);border:1px solid var(--border2);border-right:none;color:var(--text);padding:9px 12px;font-family:var(--font);font-size:13px;font-weight:500;outline:none;border-radius:4px 0 0 4px;transition:border-color 0.2s;min-width:0;}
+.search-input:focus{border-color:var(--dragon);}
+.search-input::placeholder{color:var(--muted);}
+.search-btn{background:var(--surface3);border:1px solid var(--border2);color:var(--dragon);padding:9px 16px;font-family:var(--font);font-size:11px;font-weight:700;cursor:pointer;border-radius:0 4px 4px 0;transition:all 0.2s;white-space:nowrap;letter-spacing:1px;flex-shrink:0;}
+.search-btn:hover{background:var(--dragon-dim);border-color:var(--dragon);}
+.region-divider{padding:8px 16px 5px;font-family:var(--font);font-size:10px;font-weight:700;color:var(--dragon);letter-spacing:3px;text-transform:uppercase;border-bottom:1px solid var(--border);background:rgba(18,18,26,0.99);position:sticky;top:0;z-index:2;opacity:0.8;}
+.pokemon-list{flex:1;overflow-y:auto;padding:4px 0;}
+.pokemon-list::-webkit-scrollbar{width:5px;}
+.pokemon-list::-webkit-scrollbar-track{background:var(--surface);}
+.pokemon-list::-webkit-scrollbar-thumb{background:linear-gradient(180deg,var(--dragon),rgba(79,195,247,0.2));border-radius:3px;}
+.list-item{display:flex;align-items:center;gap:10px;padding:8px 16px;cursor:pointer;transition:background 0.1s;border-left:2px solid transparent;}
+.list-item:hover{background:var(--surface2);}
+.list-item.active{background:var(--surface2);border-left-color:var(--dragon);}
+.list-num{font-size:11px;color:var(--muted);font-weight:600;min-width:42px;}
+.list-name{font-size:13px;font-weight:500;color:var(--text);}
+
+/* ── CARD ── */
+.card-area{flex:1;display:flex;align-items:center;justify-content:center;padding:20px;overflow:hidden;position:relative;z-index:1;}
+.empty-state{text-align:center;color:var(--muted);position:relative;z-index:1;}
+.empty-state p{font-size:12px;font-weight:500;letter-spacing:2px;text-transform:uppercase;}
+.poke-card{width:100%;max-width:1000px;height:calc(100vh - 128px);max-height:580px;border-radius:16px;overflow:hidden;display:grid;grid-template-columns:2fr 1fr;box-shadow:0 20px 70px rgba(0,0,0,0.88),0 0 0 1px var(--border);animation:card-in 0.3s ease;position:relative;z-index:2;}
+.poke-card::before,.poke-card::after{content:'';position:absolute;width:40px;height:40px;border-color:var(--dragon);border-style:solid;opacity:0.35;z-index:10;pointer-events:none;}
+.poke-card::before{top:0;left:0;border-width:1.5px 0 0 1.5px;border-radius:16px 0 0 0;}
+.poke-card::after{bottom:0;right:0;border-width:0 1.5px 1.5px 0;border-radius:0 0 16px 0;}
+@keyframes card-in{from{transform:translateY(10px);opacity:0;}to{transform:translateY(0);opacity:1;}}
+.card-left{position:relative;overflow:hidden;display:flex;flex-direction:column;padding:36px 36px 28px;}
+.card-top-info{position:relative;z-index:3;}
+.card-dex-num{font-weight:700;font-size:14px;color:rgba(255,255,255,0.45);letter-spacing:4px;margin-bottom:6px;}
+.dex-loading{font-size:10px;color:rgba(255,255,255,0.2);animation:pulse 1s ease-in-out infinite;letter-spacing:2px;}
+@keyframes pulse{0%,100%{opacity:0.2;}50%{opacity:0.6;}}
+.dex-real{font-size:15px;font-weight:700;color:rgba(255,255,255,0.55);letter-spacing:4px;}
+.card-name{font-size:clamp(34px,4.5vw,62px);font-weight:900;color:#fff;line-height:1;text-shadow:0 2px 20px rgba(0,0,0,0.5);letter-spacing:-1px;margin-bottom:10px;}
+.card-jp-name{position:absolute;bottom:24%;left:0;right:0;font-size:clamp(56px,8.5vw,108px);font-weight:900;color:rgba(0,0,0,0.3);line-height:1;pointer-events:none;text-align:center;letter-spacing:10px;white-space:nowrap;overflow:hidden;text-shadow:none;}
+.type-icons-row{display:flex;gap:8px;align-items:center;margin-top:4px;}
+.type-icon-img{height:26px;width:auto;border-radius:3px;}
+.legendary-tag{display:inline-flex;align-items:center;background:rgba(255,213,79,0.12);border:1px solid rgba(255,213,79,0.45);border-radius:3px;padding:4px 10px;font-size:10px;font-weight:700;color:var(--gold);letter-spacing:2px;text-transform:uppercase;}
+.card-gen-badge{display:inline-flex;align-items:center;gap:8px;margin-top:14px;background:rgba(0,0,0,0.2);border:1px solid rgba(255,255,255,0.12);border-radius:4px;padding:5px 14px;width:fit-content;}
+.card-gen-label{font-size:9px;color:rgba(255,255,255,0.38);font-weight:600;text-transform:uppercase;letter-spacing:2px;}
+.card-gen-value{font-size:15px;font-weight:700;color:rgba(255,255,255,0.82);}
+.card-sprite-wrap{position:absolute;bottom:0;left:0;right:0;top:0;display:flex;align-items:center;justify-content:center;padding-top:180px;pointer-events:none;z-index:2;}
+.card-sprite{width:clamp(200px,28vw,290px);height:clamp(200px,28vw,290px);object-fit:contain;image-rendering:pixelated;filter:drop-shadow(0 14px 32px rgba(0,0,0,0.65));animation:sprite-in 0.4s ease;}
+@keyframes sprite-in{from{transform:translateY(14px);opacity:0;}to{transform:translateY(0);opacity:1;}}
+.card-sprite-placeholder{width:120px;height:120px;border:1px dashed rgba(255,255,255,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.15);font-size:10px;text-align:center;letter-spacing:1px;}
+.card-right{background:rgba(15,15,20,0.97);padding:28px 22px;display:flex;flex-direction:column;gap:18px;border-left:1px solid var(--border);overflow-y:auto;justify-content:center;}
+.card-right::-webkit-scrollbar{width:2px;}
+.card-right::-webkit-scrollbar-thumb{background:var(--border2);border-radius:1px;}
+.section-label{font-size:9px;font-weight:700;color:var(--muted);letter-spacing:3px;text-transform:uppercase;margin-bottom:8px;}
+.stats-grid{display:flex;flex-direction:column;gap:7px;}
+.stat-row{display:flex;align-items:center;gap:10px;}
+.stat-name{font-size:10px;color:var(--text2);font-weight:600;text-transform:uppercase;letter-spacing:1px;min-width:52px;}
+.stat-val{font-size:16px;font-weight:800;color:var(--text);min-width:26px;}
+.stat-bar-wrap{flex:1;height:4px;background:rgba(255,255,255,0.07);border-radius:2px;overflow:hidden;}
+.stat-bar{height:100%;border-radius:2px;transition:width 0.4s ease;}
+.ability-row{display:flex;flex-direction:column;gap:6px;}
+.ability-pill{background:var(--surface2);border:1px solid var(--border2);border-radius:3px;padding:6px 12px;font-size:12px;font-weight:500;color:var(--text);}
+.ability-pill.hidden{border-color:rgba(79,195,247,0.22);color:var(--dragon);background:rgba(79,195,247,0.04);}
+.hidden-tag{font-size:8px;color:var(--dragon);font-weight:700;opacity:0.6;margin-left:6px;letter-spacing:1px;text-transform:uppercase;}
+.card-region{display:flex;align-items:baseline;gap:10px;padding-top:12px;border-top:1px solid var(--border);}
+.region-label{font-size:9px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:2px;}
+.region-value{font-size:15px;font-weight:700;color:var(--text);}
+.add-to-box-btn{background:transparent;border:1px solid var(--dragon);color:var(--dragon);padding:8px 14px;font-family:var(--font);font-size:11px;font-weight:700;cursor:pointer;border-radius:3px;transition:all 0.2s;letter-spacing:1px;text-transform:uppercase;width:100%;}
+.add-to-box-btn:hover{background:var(--dragon-dim);}
+
+/* ── TYPE BG ── */
+.bg-normal{background:linear-gradient(145deg,#9a9a78,#7e7e62);}
+.bg-fire{background:linear-gradient(145deg,#c85a28,#a84018);}
+.bg-water{background:linear-gradient(145deg,#3468c8,#2050a8);}
+.bg-electric{background:linear-gradient(145deg,#a89018,#8a7410);}
+.bg-grass{background:linear-gradient(145deg,#3a8e20,#2c7018);}
+.bg-ice{background:linear-gradient(145deg,#289090,#1e7070);}
+.bg-fighting{background:linear-gradient(145deg,#a02828,#822020);}
+.bg-poison{background:linear-gradient(145deg,#8e2888,#72206e);}
+.bg-ground{background:linear-gradient(145deg,#a07830,#846020);}
+.bg-flying{background:linear-gradient(145deg,#5850a8,#403888);}
+.bg-psychic{background:linear-gradient(145deg,#b82860,#982048);}
+.bg-bug{background:linear-gradient(145deg,#607018,#4c5810);}
+.bg-rock{background:linear-gradient(145deg,#886028,#6e4c1e);}
+.bg-ghost{background:linear-gradient(145deg,#3e2878,#2e1e60);}
+.bg-dragon{background:linear-gradient(145deg,#2c18a8,#1e0e8a);}
+.bg-dark{background:linear-gradient(145deg,#3a3028,#2a2218);}
+.bg-steel{background:linear-gradient(145deg,#505078,#3c3c60);}
+.bg-fairy{background:linear-gradient(145deg,#a83058,#8a2244);}
+
+/* ── TEAM PAGE ── */
+.team-page{flex:1;display:flex;flex-direction:column;overflow:hidden;position:relative;z-index:1;}
+.team-header{padding:12px 24px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px;flex-shrink:0;background:var(--surface);flex-wrap:wrap;}
+.team-name-input{background:var(--surface2);border:1px solid var(--border2);color:var(--text);padding:7px 14px;font-family:var(--font);font-size:14px;font-weight:700;outline:none;border-radius:4px;width:200px;transition:border-color 0.2s;}
+.team-name-input:focus{border-color:var(--dragon);}
+.team-save-btn{background:var(--dragon);border:none;color:#000;padding:8px 16px;font-family:var(--font);font-size:11px;font-weight:800;cursor:pointer;border-radius:4px;letter-spacing:1px;text-transform:uppercase;transition:opacity 0.2s;}
+.team-save-btn:hover{opacity:0.85;}
+.team-new-btn{background:transparent;border:1px solid var(--border2);color:var(--text2);padding:8px 12px;font-family:var(--font);font-size:11px;font-weight:600;cursor:pointer;border-radius:4px;letter-spacing:1px;text-transform:uppercase;transition:all 0.2s;}
+.team-new-btn:hover{border-color:var(--text2);}
+.team-selector{display:flex;gap:6px;align-items:center;overflow-x:auto;flex-wrap:wrap;}
+.team-pill{padding:5px 12px;border-radius:20px;font-size:11px;font-weight:600;border:1px solid var(--border2);color:var(--text2);cursor:pointer;white-space:nowrap;transition:all 0.2s;display:flex;align-items:center;gap:6px;}
+.team-pill:hover{border-color:var(--text2);}
+.team-pill.active{border-color:var(--dragon);color:var(--dragon);background:var(--dragon-dim);}
+.team-pill-del{opacity:0.4;font-size:10px;line-height:1;}
+.team-pill-del:hover{opacity:1;color:#e05555;}
+.team-body{flex:1;display:grid;grid-template-columns:1fr 1fr;overflow:hidden;}
+.team-slots-panel{padding:18px;display:flex;flex-direction:column;border-right:1px solid var(--border);overflow-y:auto;}
+.team-slots-panel::-webkit-scrollbar{width:3px;}
+.team-slots-panel::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px;}
+.team-slots-title{font-size:9px;font-weight:700;color:var(--muted);letter-spacing:3px;text-transform:uppercase;margin-bottom:12px;}
+.team-slot{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:12px;margin-bottom:8px;display:flex;gap:12px;align-items:flex-start;position:relative;}
+.team-slot.empty{border-style:dashed;opacity:0.35;align-items:center;justify-content:center;min-height:72px;}
+.team-slot.empty span{font-size:10px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;}
+.slot-sprite{width:60px;height:60px;object-fit:contain;image-rendering:pixelated;flex-shrink:0;}
+.slot-info{flex:1;min-width:0;}
+.slot-name{font-size:13px;font-weight:700;color:var(--text);margin-bottom:5px;}
+.slot-ability-select{width:100%;background:var(--surface3);border:1px solid var(--border2);color:var(--text);padding:5px 8px;font-family:var(--font);font-size:11px;outline:none;border-radius:3px;margin-bottom:7px;cursor:pointer;}
+.slot-stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px;}
+.slot-stat{display:flex;align-items:center;gap:3px;}
+.slot-stat-label{font-size:9px;color:var(--text2);font-weight:600;min-width:34px;text-transform:uppercase;letter-spacing:0.5px;}
+.slot-stat-val{font-size:12px;font-weight:800;color:var(--text);min-width:20px;text-align:center;}
+.slot-stat-btn{width:17px;height:17px;border-radius:3px;border:1px solid var(--border2);background:var(--surface3);color:var(--text2);font-size:12px;cursor:pointer;display:flex;align-items:center;justify-content:center;line-height:1;transition:all 0.15s;flex-shrink:0;padding:0;}
+.slot-stat-btn:hover{border-color:var(--dragon);color:var(--dragon);}
+.slot-remove{position:absolute;top:7px;right:8px;background:transparent;border:none;color:var(--muted);font-size:13px;cursor:pointer;padding:2px 5px;transition:color 0.15s;line-height:1;}
+.slot-remove:hover{color:#e05555;}
+.box-panel{padding:18px;display:flex;flex-direction:column;overflow:hidden;}
+.box-panel-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;flex-shrink:0;}
+.box-title{font-size:9px;font-weight:700;color:var(--muted);letter-spacing:3px;text-transform:uppercase;}
+.box-count{font-size:10px;color:var(--muted);}
+.box-search{width:100%;background:var(--surface2);border:1px solid var(--border2);color:var(--text);padding:7px 12px;font-family:var(--font);font-size:12px;outline:none;border-radius:4px;transition:border-color 0.2s;margin-bottom:10px;flex-shrink:0;}
+.box-search:focus{border-color:var(--dragon);}
+.box-search::placeholder{color:var(--muted);}
+.box-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(70px,1fr));gap:7px;overflow-y:auto;padding-right:4px;}
+.box-grid::-webkit-scrollbar{width:3px;}
+.box-grid::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px;}
+.box-mon{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:7px 4px;display:flex;flex-direction:column;align-items:center;gap:3px;cursor:pointer;transition:all 0.15s;position:relative;}
+.box-mon:hover{border-color:var(--dragon);background:var(--surface3);}
+.box-mon img{width:46px;height:46px;object-fit:contain;image-rendering:pixelated;}
+.box-mon-name{font-size:9px;font-weight:600;color:var(--text2);text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:100%;padding:0 2px;}
+.box-mon-btns{position:absolute;top:2px;right:2px;display:none;flex-direction:column;gap:2px;}
+.box-mon:hover .box-mon-btns{display:flex;}
+.box-mon-add{background:var(--dragon);border:none;color:#000;width:15px;height:15px;border-radius:2px;font-size:10px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-weight:800;line-height:1;}
+.box-mon-rem{background:#e05555;border:none;color:#fff;width:15px;height:15px;border-radius:2px;font-size:10px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-weight:800;line-height:1;}
+.box-empty{text-align:center;color:var(--muted);padding:40px 20px;}
+.box-empty p{font-size:11px;letter-spacing:2px;text-transform:uppercase;line-height:2.5;}
+.sync-status{font-size:10px;color:var(--muted);letter-spacing:1px;margin-left:auto;}
+.sync-status.syncing{color:var(--dragon);}
+.sync-status.saved{color:#70c040;}
+
+/* MOBILE */
+@media(max-width:640px){
+  .sidebar{display:none;}
+  .card-area{padding:10px;align-items:flex-start;overflow-y:auto;}
+  .poke-card{grid-template-columns:1fr;height:auto;max-height:none;}
+  .card-left{min-height:320px;}
+  .card-sprite{width:180px;height:180px;}
+  .mobile-bar{display:flex!important;}
+  .team-body{grid-template-columns:1fr;}
+}
+.mobile-bar{display:none;padding:10px 14px;gap:0;border-bottom:1px solid var(--border);flex-shrink:0;}
+</style>
+</head>
+<body>
+
+<div id="loading-screen">
+  <div class="loading-logo">PATH TO MYSTERY</div>
+  <div class="loading-bar-wrap"><div class="loading-bar" id="loading-bar"></div></div>
+  <div class="loading-text" id="loading-text">Initializing Pokédex...</div>
+</div>
+
+<div id="auth-screen">
+  <div class="auth-card">
+    <div class="auth-title">PATH TO MYSTERY</div>
+    <div class="auth-subtitle">Sign in to save your teams</div>
+    <div class="auth-tabs">
+      <div class="auth-tab active" id="auth-tab-login" onclick="setAuthTab('login')">Sign In</div>
+      <div class="auth-tab" id="auth-tab-signup" onclick="setAuthTab('signup')">Sign Up</div>
+    </div>
+    <div class="auth-field">
+      <div class="auth-label">Trainer Name</div>
+      <input class="auth-input" id="auth-username" placeholder="Choose your name..." autocomplete="off"/>
+    </div>
+    <div class="auth-field">
+      <div class="auth-label">Password</div>
+      <input class="auth-input" type="password" id="auth-password" placeholder="••••••••" onkeydown="if(event.key==='Enter')submitAuth()"/>
+    </div>
+    <div class="auth-error" id="auth-error"></div>
+    <button class="auth-btn" onclick="submitAuth()" id="auth-submit-btn">Sign In</button>
+    <div class="auth-skip" onclick="skipAuth()">Continue without account</div>
+  </div>
+</div>
+
+<div id="title-screen">
+  <div id="title-bg"></div><div id="title-overlay"></div>
+  <div class="title-content">
+    <div class="title-eyebrow">Pokémon Field Guide</div>
+    <div class="title-text">PATH TO<br>MYSTERY</div>
+    <button class="title-enter-btn" onclick="enterApp()">Enter Dex</button>
+  </div>
+</div>
+
+<div id="app">
+  <div class="mobile-bar">
+    <input class="search-input" id="mob-in" placeholder="Name or number..." onkeydown="if(event.key==='Enter')doSearch(this.value)" style="border-radius:4px 0 0 4px;"/>
+    <button class="search-btn" onclick="doSearch(document.getElementById('mob-in').value)">GO</button>
+  </div>
+  <div class="app-header">
+    <div class="header-brand">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+        <polygon points="12,1 15.5,7.5 23,7.5 17.5,13 19.5,21 12,16.5 4.5,21 6.5,13 1,7.5 8.5,7.5" fill="none" stroke="#4fc3f7" stroke-width="0.8" opacity="0.5"/>
+        <circle cx="12" cy="12" r="1" fill="#4fc3f7" opacity="0.5"/>
+      </svg>
+      <div class="app-title">PATH TO MYSTERY</div>
+    </div>
+    <div class="nav-tabs">
+      <div class="nav-tab active" id="tab-dex" onclick="switchTab('dex')">Pokédex</div>
+      <div class="nav-tab" id="tab-team" onclick="switchTab('team')">My Teams</div>
+    </div>
+    <div class="header-user" id="header-user"></div>
+  </div>
+  <div class="main-layout">
+    <div id="reshiram-bg"></div>
+    <div id="reshiram-gloss"></div>
+    <div class="page active" id="page-dex" style="display:flex;">
+      <div class="sidebar">
+        <div class="search-area">
+          <div class="search-row">
+            <input class="search-input" id="name-in" placeholder="Name..." onkeydown="if(event.key==='Enter')doSearch(this.value)"/>
+            <button class="search-btn" onclick="doSearch(document.getElementById('name-in').value)">GO</button>
+          </div>
+          <div class="search-row">
+            <input class="search-input" id="num-in" placeholder="Number..." onkeydown="if(event.key==='Enter')doSearch(this.value)"/>
+            <button class="search-btn" onclick="doSearch(document.getElementById('num-in').value)">GO</button>
+          </div>
+        </div>
+        <div class="pokemon-list" id="poke-list"></div>
+      </div>
+      <div class="card-area" id="card-area">
+        <div class="empty-state"><p>Search or select a Pokémon</p></div>
+      </div>
+    </div>
+    <div class="page" id="page-team" style="display:none;">
+      <div class="team-page">
+        <div class="team-header">
+          <input class="team-name-input" id="team-name-input" placeholder="Team name..." value="My Team"/>
+          <button class="team-save-btn" onclick="saveCurrentTeam()">Save</button>
+          <button class="team-new-btn" onclick="newTeam()">+ New</button>
+          <div class="team-selector" id="team-selector"></div>
+          <div class="sync-status" id="sync-status"></div>
+        </div>
+        <div class="team-body">
+          <div class="team-slots-panel">
+            <div class="team-slots-title" id="team-slots-title">Active Team (0/6)</div>
+            <div id="team-slots"></div>
+          </div>
+          <div class="box-panel">
+            <div class="box-panel-header">
+              <div class="box-title">Your Box</div>
+              <div class="box-count" id="box-count">0 Pokémon</div>
+            </div>
+            <input class="box-search" id="box-search" placeholder="Filter box..." oninput="renderBox(this.value)"/>
+            <div class="box-grid" id="box-grid"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── SUPABASE ──
+const SUPA_URL='https://hzhexhjzopzchcarestl.supabase.co';
+const SUPA_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh6aGV4aGp6b3B6Y2hjYXJlc3RsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ1NjM2MTcsImV4cCI6MjA5MDEzOTYxN30.u5_2oYGUjpchrK59riX6EDHRmAYPNZAPzfhcocZbwEQ';
+const supa=supabase.createClient(SUPA_URL,SUPA_KEY);
+
+let currentUser=null;
+let authMode='login';
+
+function setAuthTab(mode){
+  authMode=mode;
+  document.getElementById('auth-tab-login').classList.toggle('active',mode==='login');
+  document.getElementById('auth-tab-signup').classList.toggle('active',mode==='signup');
+  document.getElementById('auth-submit-btn').textContent=mode==='login'?'Sign In':'Create Account';
+  document.getElementById('auth-error').textContent='';
+}
+
+async function submitAuth(){
+  const username=document.getElementById('auth-username').value.trim();
+  const password=document.getElementById('auth-password').value;
+  const errEl=document.getElementById('auth-error');
+  errEl.textContent='';
+  if(!username||!password){errEl.textContent='Please fill in all fields.';return;}
+  if(password.length<6){errEl.textContent='Password must be at least 6 characters.';return;}
+  const fakeEmail=`${username.toLowerCase().replace(/[^a-z0-9]/g,'')}@martindex.app`;
+  const btn=document.getElementById('auth-submit-btn');
+  btn.textContent='...';btn.disabled=true;
+  try{
+    if(authMode==='signup'){
+      const{data,error}=await supa.auth.signUp({email:fakeEmail,password});
+      if(error){errEl.textContent=error.message.includes('already')?'Username taken. Try another.':error.message;btn.textContent='Create Account';btn.disabled=false;return;}
+      // Create profile
+      await supa.from('profiles').insert({id:data.user.id,username});
+      currentUser={id:data.user.id,username};
+    }else{
+      const{data,error}=await supa.auth.signInWithPassword({email:fakeEmail,password});
+      if(error){errEl.textContent='Invalid username or password.';btn.textContent='Sign In';btn.disabled=false;return;}
+      // Fetch profile
+      const{data:profile}=await supa.from('profiles').select('username').eq('id',data.user.id).single();
+      currentUser={id:data.user.id,username:profile?.username||username};
+    }
+    document.getElementById('auth-screen').classList.remove('visible');
+    showTitleScreen();
+  }catch(e){errEl.textContent='Something went wrong. Try again.';btn.textContent=authMode==='login'?'Sign In':'Create Account';btn.disabled=false;}
+}
+
+function skipAuth(){
+  currentUser=null;
+  document.getElementById('auth-screen').classList.remove('visible');
+  showTitleScreen();
+}
+
+function showTitleScreen(){
+  const ts=document.getElementById('title-screen');
+  ts.style.display='flex';
+}
+
+// ── AUDIO ──
+const AC=new (window.AudioContext||window.webkitAudioContext)();
+function beep(f,d,t='square',v=0.06){const o=AC.createOscillator(),g=AC.createGain();o.connect(g);g.connect(AC.destination);o.type=t;o.frequency.value=f;g.gain.setValueAtTime(v,AC.currentTime);g.gain.exponentialRampToValueAtTime(0.001,AC.currentTime+d);o.start();o.stop(AC.currentTime+d);}
+function sfxSelect(){beep(880,0.05,'square',0.055);}
+function sfxSearch(){beep(660,0.045,'square',0.055);setTimeout(()=>beep(990,0.065,'square',0.055),50);}
+function sfxOpen(){beep(440,0.04,'square',0.045);setTimeout(()=>beep(660,0.045,'square',0.045),50);setTimeout(()=>beep(880,0.08,'square',0.055),100);}
+function sfxEnter(){[330,440,550,660,880].forEach((f,i)=>setTimeout(()=>beep(f,0.08,'square',0.05),i*48));}
+function sfxError(){beep(180,0.25,'sawtooth',0.05);}
+function sfxAdd(){beep(660,0.06,'square',0.05);setTimeout(()=>beep(880,0.1,'square',0.06),60);}
+
+// ── HELPERS ──
+const TYPE_IDS={normal:1,fighting:2,flying:3,poison:4,ground:5,rock:6,bug:7,ghost:8,steel:9,fire:10,water:11,grass:12,electric:13,psychic:14,ice:15,dragon:16,dark:17,fairy:18};
+function typeIconUrl(t){const id=TYPE_IDS[t.toLowerCase()];return id?`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-ix/scarlet-violet/${id}.png`:null;}
+function statColor(v){v=parseInt(v)||0;if(v<=4)return'#e05555';if(v<=7)return'#e09030';if(v<=10)return'#e0d030';if(v<=14)return'#70c040';return'#40c0a0';}
+function statBarWidth(v){return Math.min(100,Math.round(((parseInt(v)||0)/20)*100))+'%';}
+function spriteName(n){return n.toLowerCase().replace(/ /g,'_').replace(/[^a-z0-9_\-]/g,'');}
+function spriteUrl(n){return `./static/sprites/${spriteName(n)}.png`;}
+function randId(){return Math.random().toString(36).slice(2,10);}
+const GEN_NAMES=['','I','II','III','IV','V','VI','VII','VIII','IX'];
+const SLUG_MAP={"farfetch'd":"farfetchd","sirfetch'd":"sirfetchd","ho oh":"ho-oh","ho-oh":"ho-oh","mr mime":"mr-mime","mr rime":"mr-rime","mime jr":"mime-jr","type null":"type-null","porygon 2":"porygon2","porygon z":"porygon-z","tapu koko":"tapu-koko","tapu lele":"tapu-lele","tapu bulu":"tapu-bulu","tapu fini":"tapu-fini","chi yu":"chi-yu","chien pao":"chien-pao","ting lu":"ting-lu","wo chien":"wo-chien","great tusk":"great-tusk","brute bonnet":"brute-bonnet","flutter mane":"flutter-mane","slither wing":"slither-wing","sandy shocks":"sandy-shocks","iron treads":"iron-treads","iron bundle":"iron-bundle","iron hands":"iron-hands","iron jugulis":"iron-jugulis","iron moth":"iron-moth","iron thorns":"iron-thorns","iron valiant":"iron-valiant","iron leaves":"iron-leaves","iron crown":"iron-crown","roaring moon":"roaring-moon","walking wake":"walking-wake","raging bolt":"raging-bolt","scream tail":"scream-tail","gouging fire":"gouging-fire","lycanroc midday":"lycanroc","oricorio baile":"oricorio","hoopa hoopa":"hoopa","basculegion":"basculegion-male","aegislash":"aegislash-shield","giratina":"giratina-altered","deoxys":"deoxys-normal","darmanitan":"darmanitan-standard","landorus":"landorus-incarnate","keldeo":"keldeo-ordinary","morpeko":"morpeko-full-belly","minior":"minior-red-meteor","mimikyu":"mimikyu-disguised","palafin":"palafin-zero","nidoran":"nidoran-f","shaymin":"shaymin-land","zygarde":"zygarde-50","urshifu":"urshifu-single-strike","tornadus":"tornadus-incarnate","thundurus":"thundurus-incarnate","enamorus":"enamorus-incarnate","maushold":"maushold-family-of-three","squawkabilly":"squawkabilly-green-plumage","wormadam":"wormadam-plant","wishiwashi":"wishiwashi-solo","toxtricity":"toxtricity-amped","indeedee":"indeedee-male","meowstic":"meowstic-male","frillish":"frillish-male","jellicent":"jellicent-male","eiscue":"eiscue-ice","pumpkaboo":"pumpkaboo-average","gourgeist":"gourgeist-average","pyroar":"pyroar-male","oinkologne":"oinkologne-male"};
+function toSlug(n){const l=n.toLowerCase().replace(/_/g,' ');if(SLUG_MAP[l])return SLUG_MAP[l];if(l.startsWith('mega ')){return l.replace('mega ','').replace(/ /g,'-').replace(/[^a-z0-9\-]/g,'');}return l.replace(/ /g,'-').replace(/[^a-z0-9\-]/g,'');}
+function getRegionFromId(id){if(id<=151)return'Kanto';if(id<=251)return'Johto';if(id<=386)return'Hoenn';if(id<=493)return'Sinnoh';if(id<=649)return'Unova';if(id<=721)return'Kalos';if(id<=809)return'Alola';if(id<=905)return'Galar';if(id<=1025)return'Paldea';return'Special';}
+
+let allPokemon=[];
+let pokemonByName={};
+let pokemonByNum={};
+const speciesCache={};
+
+function lookupPokemon(query){
+  const q=query.toLowerCase().trim();
+  // Try by name first
+  if(pokemonByName[q])return pokemonByName[q];
+  // Try by number (strip leading zeros and #)
+  const num=q.replace(/^#?0*/,'');
+  if(pokemonByNum[num])return pokemonByNum[num];
+  return null;
+}
+
+async function prefetchAll(list,onProgress){
+  const BATCH=8;
+  for(let i=0;i<list.length;i+=BATCH){
+    const batch=list.slice(i,i+BATCH);
+    await Promise.all(batch.map(async p=>{
+      if(speciesCache[p.name]!==undefined)return;
+      try{
+        const res=await fetch(`https://pokeapi.co/api/v2/pokemon-species/${toSlug(p.name)}`);
+        if(!res.ok){speciesCache[p.name]=null;return;}
+        const d=await res.json();
+        const jp=d.names.find(n=>n.language.name==='ja-Hrkt')||d.names.find(n=>n.language.name==='ja');
+        speciesCache[p.name]={id:d.id,region:getRegionFromId(d.id),jp:jp?jp.name:''};
+      }catch{speciesCache[p.name]=null;}
+    }));
+    onProgress(Math.min(100,Math.round(((i+BATCH)/list.length)*100)));
+    await new Promise(r=>setTimeout(r,20));
+  }
+}
+
+async function init(){
+  const loadBar=document.getElementById('loading-bar');
+  const loadText=document.getElementById('loading-text');
+  const loadScreen=document.getElementById('loading-screen');
+  loadText.textContent='Loading Pokédex data...';
+  loadBar.style.width='8%';
+  const res=await fetch('/static/martindex.json');
+  allPokemon=await res.json();
+  // Build lookup maps
+  allPokemon.forEach(p=>{
+    pokemonByName[p.name.toLowerCase()]=p;
+    pokemonByNum[p.num]=p;
+  });
+  loadBar.style.width='12%';
+  loadText.textContent='Fetching Pokémon data...';
+  await prefetchAll(allPokemon,(pct)=>{
+    loadBar.style.width=(12+Math.round(pct*0.83))+'%';
+    loadText.textContent=`Fetching data... ${pct}%`;
+  });
+  loadBar.style.width='100%';
+  loadText.textContent='Ready!';
+  await new Promise(r=>setTimeout(r,350));
+  loadScreen.classList.add('fade-out');
+  setTimeout(()=>{
+    loadScreen.style.display='none';
+    // Check if already logged in
+    supa.auth.getSession().then(async({data:{session}})=>{
+      if(session){
+        try{
+          const{data:profile,error}=await supa.from('profiles').select('username').eq('id',session.user.id).single();
+          if(error||!profile){
+            // Session exists but profile fetch failed - sign out cleanly
+            await supa.auth.signOut();
+            document.getElementById('auth-screen').classList.add('visible');
+            return;
+          }
+          currentUser={id:session.user.id,username:profile.username};
+          showTitleScreen();
+        }catch{
+          await supa.auth.signOut();
+          document.getElementById('auth-screen').classList.add('visible');
+        }
+      }else{
+        document.getElementById('auth-screen').classList.add('visible');
+      }
+    });
+  },600);
+}
+
+function enterApp(){
+  sfxEnter();
+  document.getElementById('title-screen').classList.add('fade-out');
+  setTimeout(async()=>{
+    document.getElementById('title-screen').style.display='none';
+    document.getElementById('app').classList.add('visible');
+    renderList(allPokemon);
+    updateHeaderUser();
+    await loadUserData();
+  },900);
+}
+
+function updateHeaderUser(){
+  const el=document.getElementById('header-user');
+  if(currentUser){
+    el.innerHTML=`<div class="user-badge">Trainer <span>${currentUser.username}</span></div>
+    <button class="logout-btn" onclick="logout()">Log Out</button>`;
+  }else{
+    el.innerHTML=`<button class="login-btn" onclick="showAuthScreen()">Sign In</button>`;
+  }
+}
+
+function showAuthScreen(){
+  document.getElementById('auth-screen').classList.add('visible');
+}
+
+async function logout(){
+  await supa.auth.signOut();
+  currentUser=null;
+  box=[];teams=[{name:'My Team',slots:[]}];currentTeamIdx=0;
+  updateHeaderUser();
+  renderTeamPage();
+}
+
+// ── TABS ──
+function switchTab(tab){
+  document.getElementById('tab-dex').classList.toggle('active',tab==='dex');
+  document.getElementById('tab-team').classList.toggle('active',tab==='team');
+  document.getElementById('page-dex').style.display=tab==='dex'?'flex':'none';
+  document.getElementById('page-team').style.display=tab==='team'?'flex':'none';
+  if(tab==='team')renderTeamPage();
+}
+
+// ── DEX LIST ──
+function buildSortedList(){
+  return [...allPokemon].sort((a,b)=>{
+    const da=speciesCache[a.name],db=speciesCache[b.name];
+    return(da?da.id:99999)-(db?db.id:99999);
+  });
+}
+
+function renderList(list){
+  const sorted=list===allPokemon?buildSortedList():list;
+  const el=document.getElementById('poke-list');
+  let html='',lastRegion=null;
+  sorted.forEach(p=>{
+    const cached=speciesCache[p.name];
+    const region=cached?cached.region:p.region;
+    const displayNum=cached?'#'+String(cached.id).padStart(4,'0'):'#???';
+    if(region!==lastRegion){html+=`<div class="region-divider">${region}</div>`;lastRegion=region;}
+    html+=`<div class="list-item" id="item-${p.num}" onclick="sfxSelect();doSearch('${p.name.replace(/'/g,"\\'")}')">
+      <span class="list-num">${displayNum}</span><span class="list-name">${p.name}</span></div>`;
+  });
+  el.innerHTML=html;
+}
+
+document.getElementById('name-in').addEventListener('input',e=>{
+  const q=e.target.value.toLowerCase();
+  if(!q){renderList(allPokemon);return;}
+  renderList(allPokemon.filter(p=>p.name.toLowerCase().includes(q)||p.num.includes(q)));
+});
+
+async function doSearch(query){
+  if(!query||!query.trim())return;
+  sfxSearch();
+  try{
+    const p=lookupPokemon(query.trim());
+    if(!p){sfxError();showError();return;}
+    sfxOpen();renderCard(p);
+    document.querySelectorAll('.list-item').forEach(x=>x.classList.remove('active'));
+    const item=document.getElementById(`item-${p.num}`);
+    if(item){item.classList.add('active');item.scrollIntoView({block:'nearest',behavior:'smooth'});}
+    const sd=speciesCache[p.name];
+    if(sd){
+      const numEl=document.getElementById('dex-num-el');
+      const jpEl=document.getElementById('card-jp-el');
+      const regEl=document.getElementById('card-region-val');
+      if(numEl)numEl.innerHTML=`<span class="dex-real">#${String(sd.id).padStart(4,'0')}</span>`;
+      if(jpEl)jpEl.textContent=sd.jp||'';
+      if(regEl)regEl.textContent=sd.region;
+    }
+  }catch(e){sfxError();showError();}
+}
+
+function showError(){document.getElementById('card-area').innerHTML=`<div class="empty-state"><p>Pokémon not found</p></div>`;}
+
+function renderCard(p){
+  const t1=p.type1.toLowerCase(),t2=p.type2?p.type2.toLowerCase():null;
+  const sd=speciesCache[p.name];
+  const icon1=typeIconUrl(t1),icon2=t2?typeIconUrl(t2):null;
+  const genLabel=GEN_NAMES[parseInt(p.generation)]||p.generation;
+
+  document.getElementById('card-area').innerHTML=`
+    <div class="poke-card">
+      <div class="card-left bg-${t1}">
+        <div class="card-top-info">
+          <div class="card-dex-num" id="dex-num-el">${sd?`<span class="dex-real">#${String(sd.id).padStart(4,'0')}</span>`:`<span class="dex-loading">loading...</span>`}</div>
+          <div class="card-name">${p.name}</div>
+          <div class="type-icons-row">
+            ${icon1?`<img class="type-icon-img" src="${icon1}" alt="${p.type1}" onerror="this.style.display='none'"/>`:''}
+            ${icon2?`<img class="type-icon-img" src="${icon2}" alt="${p.type2}" onerror="this.style.display='none'"/>`:''}
+            ${p.legendary==='TRUE'?`<span class="legendary-tag">★ Legendary</span>`:''}
+          </div>
+          <div class="card-gen-badge"><span class="card-gen-label">Generation</span><span class="card-gen-value">${genLabel}</span></div>
+        </div>
+        <div class="card-sprite-wrap">
+          <img class="card-sprite" src="${spriteUrl(p.name)}" onerror="this.outerHTML='<div class=\\'card-sprite-placeholder\\'>NO SPRITE</div>'" alt="${p.name}"/>
+        </div>
+        <div class="card-jp-name" id="card-jp-el">${sd?sd.jp:''}</div>
+      </div>
+      <div class="card-right">
+        <div>
+          <div class="section-label">Base Stats</div>
+          <div class="stats-grid">
+            ${['HP','ATK','DEF','SP.ATK','SP.DEF','SPD'].map((label,i)=>{
+              const v=[p.hp,p.attack,p.defense,p.spAtk,p.spDef,p.speed][i];
+              return `<div class="stat-row"><span class="stat-name">${label}</span><span class="stat-val">${v}</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:${statBarWidth(v)};background:${statColor(v)};"></div></div></div>`;
+            }).join('')}
+          </div>
+        </div>
+        ${(p.ability1||p.ability2||p.hiddenAbility)?`<div>
+          <div class="section-label">Abilities</div>
+          <div class="ability-row">
+            ${p.ability1?`<span class="ability-pill">${p.ability1}</span>`:''}
+            ${p.ability2?`<span class="ability-pill">${p.ability2}</span>`:''}
+            ${p.hiddenAbility?`<span class="ability-pill hidden">${p.hiddenAbility}<span class="hidden-tag">HA</span></span>`:''}
+          </div>
+        </div>`:''}
+        <div class="card-region"><span class="region-label">Region</span><span class="region-value" id="card-region-val">${sd?sd.region:p.region}</span></div>
+        <button class="add-to-box-btn" onclick="addToBox(${JSON.stringify(p).replace(/"/g,'&quot;')})">+ Add to Box</button>
+      </div>
+    </div>`;
+}
+
+// ── DATA LAYER — Supabase or localStorage fallback ──
+let box=[];
+let teams=[];
+let currentTeamIdx=0;
+let syncDebounce=null;
+
+async function loadUserData(){
+  if(currentUser){
+    // Load from Supabase
+    const[{data:boxData},{data:teamsData}]=await Promise.all([
+      supa.from('boxes').select('pokemon').eq('user_id',currentUser.id).single(),
+      supa.from('teams').select('*').eq('user_id',currentUser.id).order('created_at')
+    ]);
+    box=boxData?.pokemon||[];
+    teams=teamsData?.length>0?teamsData.map(t=>({id:t.id,name:t.name,slots:t.slots})):[{name:'My Team',slots:[]}];
+  }else{
+    // Fallback to localStorage
+    try{
+      box=JSON.parse(localStorage.getItem('ptm_box')||'[]');
+      teams=JSON.parse(localStorage.getItem('ptm_teams')||'[]');
+      if(teams.length===0)teams=[{name:'My Team',slots:[]}];
+    }catch{box=[];teams=[{name:'My Team',slots:[]}];}
+  }
+  currentTeamIdx=0;
+}
+
+function setSyncStatus(status){
+  const el=document.getElementById('sync-status');
+  if(!el)return;
+  if(status==='syncing'){el.textContent='Syncing...';el.className='sync-status syncing';}
+  else if(status==='saved'){el.textContent='✓ Saved';el.className='sync-status saved';setTimeout(()=>{el.textContent='';el.className='sync-status';},2000);}
+  else{el.textContent='';el.className='sync-status';}
+}
+
+async function persistData(){
+  if(currentUser){
+    setSyncStatus('syncing');
+    // Upsert box
+    await supa.from('boxes').upsert({user_id:currentUser.id,pokemon:box,updated_at:new Date().toISOString()},{onConflict:'user_id'});
+    // Upsert each team
+    for(const t of teams){
+      if(t.id){
+        await supa.from('teams').update({name:t.name,slots:t.slots}).eq('id',t.id);
+      }else{
+        const{data}=await supa.from('teams').insert({user_id:currentUser.id,name:t.name,slots:t.slots}).select().single();
+        if(data)t.id=data.id;
+      }
+    }
+    setSyncStatus('saved');
+  }else{
+    localStorage.setItem('ptm_box',JSON.stringify(box));
+    localStorage.setItem('ptm_teams',JSON.stringify(teams));
+  }
+}
+
+function scheduleSave(){
+  clearTimeout(syncDebounce);
+  syncDebounce=setTimeout(()=>persistData(),800);
+}
+
+// ── BOX ──
+function addToBox(p){
+  sfxAdd();
+  box.push({
+    boxId:randId(),
+    name:p.name,type1:p.type1,type2:p.type2||'',
+    hp:parseInt(p.hp),attack:parseInt(p.attack),defense:parseInt(p.defense),
+    spAtk:parseInt(p.spAtk),spDef:parseInt(p.spDef),speed:parseInt(p.speed),
+    ability1:p.ability1||'',ability2:p.ability2||'',hiddenAbility:p.hiddenAbility||'',
+    selectedAbility:p.ability1||p.ability2||p.hiddenAbility||'',
+    legendary:p.legendary,generation:p.generation
+  });
+  scheduleSave();
+  // Flash button
+  const btn=document.querySelector('.add-to-box-btn');
+  if(btn){const orig=btn.textContent;btn.textContent='✓ Added!';btn.style.borderColor='#70c040';btn.style.color='#70c040';setTimeout(()=>{btn.textContent=orig;btn.style.borderColor='';btn.style.color='';},1200);}
+}
+
+function removeFromBox(boxId){
+  box=box.filter(b=>b.boxId!==boxId);
+  scheduleSave();
+  renderBox(document.getElementById('box-search')?.value||'');
+}
+
+// ── TEAM ──
+function renderTeamPage(){
+  renderTeamSelector();
+  renderTeamSlots();
+  renderBox('');
+}
+
+function renderTeamSelector(){
+  const el=document.getElementById('team-selector');
+  el.innerHTML=teams.map((t,i)=>`
+    <div class="team-pill ${i===currentTeamIdx?'active':''}" onclick="switchTeam(${i})">
+      ${t.name}
+      ${teams.length>1?`<span class="team-pill-del" onclick="event.stopPropagation();deleteTeam(${i})">✕</span>`:''}
+    </div>`).join('');
+  document.getElementById('team-name-input').value=teams[currentTeamIdx].name;
+}
+
+function switchTeam(i){currentTeamIdx=i;renderTeamSelector();renderTeamSlots();}
+
+function newTeam(){
+  teams.push({name:'Team '+(teams.length+1),slots:[]});
+  currentTeamIdx=teams.length-1;
+  scheduleSave();renderTeamSelector();renderTeamSlots();
+}
+
+async function deleteTeam(i){
+  if(teams.length<=1)return;
+  const t=teams[i];
+  if(t.id&&currentUser)await supa.from('teams').delete().eq('id',t.id);
+  teams.splice(i,1);
+  currentTeamIdx=Math.max(0,currentTeamIdx-1);
+  scheduleSave();renderTeamSelector();renderTeamSlots();
+}
+
+function saveCurrentTeam(){
+  teams[currentTeamIdx].name=document.getElementById('team-name-input').value||'My Team';
+  scheduleSave();sfxAdd();renderTeamSelector();
+}
+
+function renderTeamSlots(){
+  const team=teams[currentTeamIdx];
+  const slots=team.slots||[];
+  document.getElementById('team-slots-title').textContent=`Active Team (${slots.length}/6)`;
+  let html='';
+  for(let i=0;i<6;i++){
+    const mon=slots[i];
+    if(mon){
+      const abilities=[mon.ability1,mon.ability2,mon.hiddenAbility].filter(Boolean);
+      const abilOpts=abilities.map(a=>`<option value="${a}" ${a===mon.selectedAbility?'selected':''}>${a}${a===mon.hiddenAbility?' (HA)':''}</option>`).join('');
+      const statKeys=['hp','attack','defense','spAtk','spDef','speed'];
+      const statLabels=['HP','ATK','DEF','SPATK','SPDEF','SPD'];
+      const statsHtml=statKeys.map((k,si)=>`
+        <div class="slot-stat">
+          <span class="slot-stat-label">${statLabels[si]}</span>
+          <button class="slot-stat-btn" onclick="adjustStat(${i},'${k}',-1)">−</button>
+          <span class="slot-stat-val" id="sstat-${i}-${k}">${mon[k]}</span>
+          <button class="slot-stat-btn" onclick="adjustStat(${i},'${k}',1)">+</button>
+        </div>`).join('');
+      html+=`<div class="team-slot">
+        <button class="slot-remove" onclick="removeFromTeam(${i})">✕</button>
+        <img class="slot-sprite" src="${spriteUrl(mon.name)}" onerror="this.style.opacity='0.2'" alt="${mon.name}"/>
+        <div class="slot-info">
+          <div class="slot-name">${mon.name}</div>
+          <select class="slot-ability-select" onchange="setAbility(${i},this.value)">${abilOpts}</select>
+          <div class="slot-stats-grid">${statsHtml}</div>
+        </div>
+      </div>`;
+    }else{
+      html+=`<div class="team-slot empty"><span>Empty Slot</span></div>`;
+    }
+  }
+  document.getElementById('team-slots').innerHTML=html;
+}
+
+function adjustStat(slotIdx,stat,delta){
+  const mon=teams[currentTeamIdx].slots[slotIdx];
+  if(!mon)return;
+  mon[stat]=Math.max(0,Math.min(99,(mon[stat]||0)+delta));
+  const el=document.getElementById(`sstat-${slotIdx}-${stat}`);
+  if(el)el.textContent=mon[stat];
+  scheduleSave();
+}
+
+function setAbility(slotIdx,val){teams[currentTeamIdx].slots[slotIdx].selectedAbility=val;scheduleSave();}
+
+function removeFromTeam(slotIdx){teams[currentTeamIdx].slots.splice(slotIdx,1);scheduleSave();renderTeamSlots();}
+
+function addToTeam(boxId){
+  const team=teams[currentTeamIdx];
+  if(!team.slots)team.slots=[];
+  if(team.slots.length>=6){alert('Team is full (6/6)!');return;}
+  const mon=box.find(b=>b.boxId===boxId);
+  if(!mon)return;
+  team.slots.push({...mon,slotId:randId()});
+  scheduleSave();sfxAdd();renderTeamSlots();
+}
+
+function renderBox(filter){
+  const el=document.getElementById('box-grid');
+  const countEl=document.getElementById('box-count');
+  const filtered=filter?box.filter(m=>m.name.toLowerCase().includes(filter.toLowerCase())):box;
+  countEl.textContent=`${box.length} Pokémon`;
+  if(box.length===0){
+    el.innerHTML='';
+    const existing=el.parentElement.querySelector('.box-empty');
+    if(!existing){const empty=document.createElement('div');empty.className='box-empty';empty.innerHTML='<p>Your box is empty.<br>Add Pokémon from<br>the Pokédex tab.</p>';el.parentElement.insertBefore(empty,el);}
+    return;
+  }
+  el.parentElement.querySelector('.box-empty')?.remove();
+  el.innerHTML=filtered.map(m=>`
+    <div class="box-mon" title="${m.name}">
+      <img src="${spriteUrl(m.name)}" alt="${m.name}" onerror="this.style.opacity='0.3'"/>
+      <div class="box-mon-name">${m.name}</div>
+      <div class="box-mon-btns">
+        <button class="box-mon-add" onclick="event.stopPropagation();addToTeam('${m.boxId}')" title="Add to team">+</button>
+        <button class="box-mon-rem" onclick="event.stopPropagation();removeFromBox('${m.boxId}')" title="Remove from box">✕</button>
+      </div>
+    </div>`).join('');
+}
+
+init().catch(console.error);
+</script>
+</body>
+</html>

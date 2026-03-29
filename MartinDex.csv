@@ -1,0 +1,1071 @@
+Num,Name,Type1,Type2,HP,Attack,Defense,SpAtk,SpDef,Speed,Generation,Legendary,Ability1,Ability2,HiddenAbility
+1,Abomasnow,Grass,Ice,9,9,8,9,8,6,4,FALSE,Snow Warning,,Soundproof
+2,Abra,Psychic,,2,2,2,10,6,9,1,FALSE,Synchronize,Inner Focus,Magic Guard
+3,Absol,Dark,,6,13,6,8,6,8,3,FALSE,Pressure,Super Luck,Justified
+4,Accelgor,Bug,,8,7,4,10,6,14,5,FALSE,Hydration,Sticky Hold,Unburden
+5,Aegislash,Steel,Ghost,6,5,14,5,14,6,6,FALSE,Stance Change,,
+6,Aerodactyl,Rock,Flying,8,10,6,6,8,13,1,FALSE,Rock Head,Pressure,Unnerve
+7,Aggron,Steel,Rock,7,11,18,6,6,5,3,FALSE,Sturdy,Rock Head,Heavy Metal
+8,Aipom,Normal,,6,7,6,4,6,8,2,FALSE,Run Away,Pickup,Skill Link
+9,Alakazam,Psychic,,6,5,4,14,10,12,1,FALSE,Synchronize,Inner Focus,Magic Guard
+10,Alcremie,Fairy,,6,6,8,11,12,6,8,FALSE,Sweet Veil,,Aroma Veil
+11,Alomomola,Water,,16,8,8,4,4,6,5,FALSE,Healer,Hydration,Regenerator
+12,Altaria,Dragon,Flying,8,7,9,7,10,8,3,FALSE,Natural Cure,,Cloud Nine
+13,Amaura,Rock,Ice,8,6,5,7,6,5,6,FALSE,Refrigerate,,Snow Warning
+14,Ambipom,Normal,,8,10,7,6,7,12,4,FALSE,Technician,Pickup,Skill Link
+15,Amoonguss,Grass,Poison,11,8,7,8,8,3,5,FALSE,Effect Spore,,Regenerator
+16,Ampharos,Electric,,9,8,8,12,9,6,2,FALSE,Static,,Plus
+17,Annihilape,Fighting,Ghost,11,12,8,5,9,9,9,FALSE,Vital Spirit,Inner Focus,Defiant
+18,Anorith,Rock,Bug,4,10,5,4,5,8,3,FALSE,Battle Armor,,Swift Swim
+19,Appletun,Grass,Dragon,11,8,8,10,8,3,8,FALSE,Ripen,Gluttony,Thick Fat
+20,Applin,Grass,Dragon,4,4,8,4,4,2,8,FALSE,Ripen,Gluttony,Bulletproof
+21,Araquanid,Water,Bug,7,7,9,5,13,4,7,FALSE,Water Bubble,,Water Absorb
+22,Arbok,Poison,,6,10,7,6,8,8,1,FALSE,Intimidate,Shed Skin,Unnerve
+23,Arboliva,Grass,Normal,8,7,9,12,11,4,9,FALSE,Seed Sower,,Harvest
+24,Arcanine,Fire,,9,11,8,10,8,10,1,FALSE,Intimidate,Flash Fire,Justified
+25,Arceus,Normal,,12,12,12,12,12,12,4,FALSE,Multitype,,
+26,Archaludon,Steel,Dragon,9,10,13,12,6,8,9,FALSE,Stamina,Sturdy,Stalwart
+27,Archen,Rock,Flying,6,11,4,7,4,7,5,FALSE,Defeatist,,
+28,Archeops,Rock,Flying,8,14,6,11,6,11,5,FALSE,Defeatist,,
+29,Arctibax,Dragon,Ice,9,10,7,4,6,6,9,FALSE,Thermal Exchange,,Ice Body
+30,Arctovish,Water,Ice,9,9,10,8,9,6,8,FALSE,Water Absorb,Ice Body,Slush Rush
+31,Arctozolt,Electric,Ice,9,10,9,9,8,6,8,FALSE,Volt Absorb,Static,Slush Rush
+32,Ariados,Bug,Poison,7,9,7,6,7,4,2,FALSE,Swarm,Insomnia,Sniper
+33,Armaldo,Rock,Bug,8,12,10,7,8,4,3,FALSE,Battle Armor,,Swift Swim
+34,Armarouge,Fire,Psychic,8,6,10,12,8,8,9,FALSE,Flash Fire,,Weak Armor
+35,Aromatisse,Fairy,,10,7,7,10,9,3,6,FALSE,Healer,,Aroma Veil
+36,Aron,Steel,Rock,5,7,10,4,4,3,3,FALSE,Sturdy,Rock Head,Heavy Metal
+37,Arrokuda,Water,,4,6,4,4,3,7,8,FALSE,Swift Swim,,Propeller Tail
+38,Articuno,Ice,Flying,9,8,10,10,12,8,1,TRUE,Pressure,,Snow Cloak
+39,Audino,Normal,,10,6,9,6,9,5,5,FALSE,Healer,Regenerator,Klutz
+40,Aurorus,Rock,Ice,12,8,7,10,9,6,6,FALSE,Refrigerate,,Snow Warning
+41,Avalugg,Ice,,10,12,18,4,5,3,6,FALSE,Own Tempo,Ice Body,Sturdy
+42,Axew,Dragon,,5,9,6,3,4,6,5,FALSE,Rivalry,Mold Breaker,Unnerve
+43,Azelf,Psychic,,8,12,7,12,7,12,4,TRUE,Levitate,,
+44,Azumarill,Water,Fairy,10,5,8,6,8,5,2,FALSE,Thick Fat,Huge Power,Sap Sipper
+45,Azurill,Normal,Fairy,5,2,4,2,4,2,3,FALSE,Thick Fat,Huge Power,Sap Sipper
+46,Bagon,Dragon,,4,8,6,4,3,5,3,FALSE,Rock Head,,Sheer Force
+47,Baltoy,Ground,Psychic,4,4,6,4,7,6,3,FALSE,Levitate,,
+48,Banette,Ghost,,6,12,6,8,6,6,3,FALSE,Insomnia,Frisk,Cursed Body
+49,Barbaracle,Rock,Water,7,10,12,5,9,7,6,FALSE,Tough Claws,Sniper,Pickpocket
+50,Barboach,Water,Ground,5,5,4,5,4,6,3,FALSE,Oblivious,Anticipation,Hydration
+51,Barraskewda,Water,,6,12,6,6,5,14,8,FALSE,Swift Swim,,Propeller Tail
+52,Basculegion,Water,Ghost,12,11,6,8,8,8,8,FALSE,Swift Swim,Adaptability,Mold Breaker
+53,Basculin,Water,,7,9,6,8,6,10,5,FALSE,Reckless,Adaptability,Mold Breaker
+54,Bastiodon,Rock,Steel,6,5,17,5,14,3,4,FALSE,Sturdy,,Soundproof
+55,Baxcalibur,Dragon,Ice,12,14,9,8,9,9,9,FALSE,Thermal Exchange,,Ice Body
+56,Bayleef,Grass,,6,6,8,6,8,6,2,FALSE,Overgrow,,Leaf Guard
+57,Beartic,Ice,,10,13,8,7,8,5,5,FALSE,Snow Cloak,Slush Rush,Swift Swim
+58,Beautifly,Bug,Flying,6,7,5,10,5,6,3,FALSE,Swarm,,Rivalry
+59,Beedrill,Bug,Poison,6,9,4,4,8,8,1,FALSE,Swarm,,Sniper
+60,Beheeyem,Psychic,,8,8,8,12,10,4,5,FALSE,Telepathy,Synchronize,Analytic
+61,Beldum,Steel,Psychic,4,6,8,4,6,3,3,FALSE,Clear Body,,Light Metal
+62,Bellibolt,Electric,,11,6,9,10,8,4,9,FALSE,Electromorphosis,Static,Damp
+63,Bellossom,Grass,,8,8,10,9,10,5,2,FALSE,Chlorophyll,,Healer
+64,Bellsprout,Grass,Poison,5,8,4,7,3,4,1,FALSE,Chlorophyll,,Gluttony
+65,Bergmite,Ice,,6,7,8,3,4,3,6,FALSE,Own Tempo,Ice Body,Sturdy
+66,Bewear,Normal,Fighting,12,12,8,6,6,6,7,FALSE,Fluffy,Klutz,Unnerve
+67,Bibarel,Normal,Water,8,8,6,6,6,7,4,FALSE,Simple,Unaware,Moody
+68,Bidoof,Normal,,6,4,4,4,4,3,4,FALSE,Simple,Unaware,Moody
+69,Binacle,Rock,Water,4,5,7,4,6,5,6,FALSE,Tough Claws,Sniper,Pickpocket
+70,Bisharp,Dark,Steel,6,12,10,6,7,7,5,FALSE,Defiant,Inner Focus,Pressure
+71,Blacephalon,Fire,Ghost,5,13,5,15,8,11,7,FALSE,Beast Boost,,
+72,Blastoise,Water,,8,8,10,8,10,8,1,FALSE,Torrent,,Rain Dish
+73,Blaziken,Fire,Fighting,8,12,7,11,7,8,3,FALSE,Blaze,,Speed Boost
+74,Blipbug,Bug,,2,2,2,2,4,4,8,FALSE,Swarm,Compound Eyes,Telepathy
+75,Blissey,Normal,,26,1,1,8,14,6,2,FALSE,Natural Cure,Serene Grace,Healer
+76,Blitzle,Electric,,4,6,3,5,3,8,5,FALSE,Lightning Rod,Motor Drive,Sap Sipper
+77,Boldore,Rock,,7,10,10,5,4,2,5,FALSE,Sturdy,Weak Armor,Sand Force
+78,Boltund,Electric,,7,9,6,9,6,12,8,FALSE,Strong Jaw,,Competitive
+79,Bombirdier,Flying,Dark,7,10,8,6,8,8,9,FALSE,Big Pecks,Keen Eye,Rocky Payload
+80,Bonsly,Rock,,5,8,10,1,4,1,4,FALSE,Sturdy,Rock Head,Rattled
+81,Bouffalant,Normal,,10,11,10,4,10,6,5,FALSE,Reckless,Sap Sipper,Soundproof
+82,Bounsweet,Grass,,4,3,4,3,4,3,7,FALSE,Leaf Guard,Oblivious,Sweet Veil
+83,Braixen,Fire,,6,6,6,9,7,7,6,FALSE,Blaze,,Magician
+84,Brambleghast,Grass,Ghost,6,12,7,8,7,9,9,FALSE,Wind Rider,,Infiltrator
+85,Bramblin,Grass,Ghost,4,6,3,4,4,6,9,FALSE,Wind Rider,,Infiltrator
+86,Braviary,Normal,Flying,10,12,8,6,8,8,5,FALSE,Keen Eye,Sheer Force,Defiant
+87,Breloom,Grass,Fighting,6,13,8,6,6,7,3,FALSE,Effect Spore,Poison Heal,Technician
+88,Brionne,Water,,6,7,7,9,8,5,7,FALSE,Torrent,,Liquid Voice
+89,Bronzong,Steel,Psychic,7,9,12,8,12,3,4,FALSE,Levitate,Heatproof,Heavy Metal
+90,Bronzor,Steel,Psychic,6,2,9,2,9,2,4,FALSE,Levitate,Heatproof,Heavy Metal
+91,Brute Bonnet,Grass,Dark,11,13,10,8,10,6,9,FALSE,Protosynthesis,,
+92,Bruxish,Water,Psychic,7,10,7,7,7,9,7,FALSE,Dazzling,Strong Jaw,Wonder Skin
+93,Budew,Grass,Poison,4,3,4,5,7,6,4,FALSE,Natural Cure,Poison Point,Leaf Guard
+94,Buizel,Water,,6,6,4,6,3,8,4,FALSE,Swift Swim,,Water Veil
+95,Bulbasaur,Grass,Poison,4,5,5,6,6,4,1,FALSE,Overgrow,,Chlorophyll
+96,Buneary,Normal,,6,7,4,4,6,8,4,FALSE,Run Away,Klutz,Limber
+97,Bunnelby,Normal,,4,4,4,3,4,6,6,FALSE,Pickup,Cheek Pouch,Huge Power
+98,Burmy,Bug,,4,3,4,3,4,4,4,FALSE,Shed Skin,,Overcoat
+99,Butterfree,Bug,Flying,6,4,5,9,8,7,1,FALSE,Compound Eyes,,Tinted Lens
+100,Buzzwole,Bug,Fighting,11,14,14,5,5,8,7,FALSE,Beast Boost,,
+101,Cacnea,Grass,,5,8,4,8,4,4,3,FALSE,Sand Veil,,Water Absorb
+102,Cacturne,Grass,Dark,7,12,6,12,6,6,3,FALSE,Sand Veil,,Water Absorb
+103,Calyrex,Psychic,Grass,10,8,8,8,8,8,8,TRUE,Unnerve,,
+104,Camerupt,Fire,Ground,7,10,7,10,8,4,3,FALSE,Magma Armor,Solid Rock,Anger Point
+105,Capsakid,Grass,,5,6,4,6,4,5,9,FALSE,Chlorophyll,Insomnia,Klutz
+106,Carbink,Rock,Fairy,5,5,15,5,15,5,6,FALSE,Clear Body,,Sturdy
+107,Carkol,Rock,Fire,8,6,9,6,7,5,8,FALSE,Steam Engine,Flame Body,Flash Fire
+108,Carnivine,Grass,,7,10,7,9,7,5,4,FALSE,Levitate,,
+109,Carracosta,Water,Rock,7,11,13,8,6,3,5,FALSE,Solid Rock,Sturdy,Swift Swim
+110,Carvanha,Water,Dark,4,9,2,6,2,6,3,FALSE,Rough Skin,,Speed Boost
+111,Cascoon,Bug,,5,4,6,2,2,2,3,FALSE,Shed Skin,,
+112,Castform,Normal,,7,7,7,7,7,7,3,FALSE,Forecast,,
+113,Caterpie,Bug,,4,3,4,2,2,4,1,FALSE,Shield Dust,,Run Away
+114,Celebi,Psychic,Grass,10,10,10,10,10,10,2,FALSE,Natural Cure,,
+115,Celesteela,Steel,Flying,10,10,10,11,10,6,7,FALSE,Beast Boost,,
+116,Centiskorch,Fire,Bug,10,12,6,9,9,6,8,FALSE,Flash Fire,White Smoke,Flame Body
+117,Ceruledge,Fire,Ghost,8,12,8,6,10,8,9,FALSE,Flash Fire,,Weak Armor
+118,Cetitan,Ice,,17,11,6,4,6,7,9,FALSE,Thick Fat,Slush Rush,Sheer Force
+119,Cetoddle,Ice,,11,7,4,3,4,4,9,FALSE,Thick Fat,Snow Cloak,Sheer Force
+120,Chandelure,Ghost,Fire,6,6,9,14,9,8,5,FALSE,Flash Fire,Flame Body,Infiltrator
+121,Chansey,Normal,,25,0,0,4,10,5,1,FALSE,Natural Cure,Serene Grace,Healer
+122,Charcadet,Fire,,4,5,4,5,4,4,9,FALSE,Flash Fire,,Flame Body
+123,Charizard,Fire,Flying,8,8,8,11,8,10,1,FALSE,Blaze,,Solar Power
+124,Charjabug,Bug,Electric,6,8,10,6,8,4,7,FALSE,Battery,,
+125,Charmander,Fire,,4,5,4,6,5,6,1,FALSE,Blaze,,Solar Power
+126,Charmeleon,Fire,,6,6,6,8,6,8,1,FALSE,Blaze,,Solar Power
+127,Chatot,Normal,Flying,8,6,4,9,4,9,4,FALSE,Keen Eye,Tangled Feet,Big Pecks
+128,Cherrim,Grass,,7,6,7,9,8,8,4,FALSE,Flower Gift,,
+129,Cherubi,Grass,,4,4,4,6,5,4,4,FALSE,Chlorophyll,,
+130,Chesnaught,Grass,Fighting,9,11,12,7,8,6,6,FALSE,Overgrow,,Bulletproof
+131,Chespin,Grass,,6,6,6,5,4,4,6,FALSE,Overgrow,,Bulletproof
+132,Chewtle,Water,,5,6,5,4,4,4,8,FALSE,Strong Jaw,Shell Armor,Swift Swim
+133,Chi Yu,Dark,Fire,6,8,8,14,12,10,9,TRUE,Beads Of Ruin,,
+134,Chien Pao,Dark,Ice,8,12,8,9,6,14,9,TRUE,Sword Of Ruin,,
+135,Chikorita,Grass,,4,5,6,5,6,4,2,FALSE,Overgrow,,Leaf Guard
+136,Chimchar,Fire,,4,6,4,6,4,6,4,FALSE,Blaze,,Iron Fist
+137,Chimecho,Psychic,,8,5,8,10,9,6,3,FALSE,Levitate,,
+138,Chinchou,Water,Electric,8,4,4,6,6,7,2,FALSE,Volt Absorb,Illuminate,Water Absorb
+139,Chingling,Psychic,,4,3,5,6,5,4,4,FALSE,Levitate,,
+140,Cinccino,Normal,,8,10,6,6,6,12,5,FALSE,Cute Charm,Technician,Skill Link
+141,Cinderace,Fire,,8,12,8,6,8,12,8,FALSE,Blaze,,Libero
+142,Clamperl,Water,,4,6,8,7,6,3,3,FALSE,Shell Armor,,Rattled
+143,Clauncher,Water,,5,5,6,6,6,4,6,FALSE,Mega Launcher,,
+144,Clawitzer,Water,,7,7,9,12,9,6,6,FALSE,Mega Launcher,,
+145,Claydol,Ground,Psychic,6,7,10,7,12,8,3,FALSE,Levitate,,
+146,Clefable,Fairy,,10,7,7,10,9,6,1,FALSE,Cute Charm,Magic Guard,Unaware
+147,Clefairy,Fairy,,7,4,5,6,6,4,1,FALSE,Cute Charm,Magic Guard,Friend Guard
+148,Cleffa,Fairy,,5,2,3,4,6,2,2,FALSE,Cute Charm,Magic Guard,Friend Guard
+149,Clobbopus,Fighting,,5,7,6,5,5,3,8,FALSE,Limber,,Technician
+150,Clodsire,Poison,Ground,13,8,6,4,10,2,9,FALSE,Poison Point,Water Absorb,Unaware
+151,Cloyster,Water,Ice,5,10,18,8,4,7,1,FALSE,Shell Armor,Skill Link,Overcoat
+152,Coalossal,Rock,Fire,11,8,12,8,9,3,8,FALSE,Steam Engine,Flame Body,Flash Fire
+153,Cobalion,Steel,Fighting,9,9,13,9,7,11,5,TRUE,Justified,,
+154,Cofagrigus,Ghost,,6,5,14,10,10,3,5,FALSE,Mummy,,
+155,Combee,Bug,Flying,3,3,4,3,4,7,4,FALSE,Honey Gather,,Hustle
+156,Combusken,Fire,Fighting,6,8,6,8,6,6,3,FALSE,Blaze,,Speed Boost
+157,Comfey,Fairy,,5,5,9,8,11,10,7,FALSE,Flower Veil,Triage,Natural Cure
+158,Conkeldurr,Fighting,,10,14,10,6,6,4,5,FALSE,Guts,Sheer Force,Iron Fist
+159,Copperajah,Steel,,12,13,7,8,7,3,8,FALSE,Sheer Force,,Heavy Metal
+160,Corphish,Water,,4,8,6,5,4,4,3,FALSE,Hyper Cutter,Shell Armor,Adaptability
+161,Corsola,Water,Rock,6,6,10,6,10,4,2,FALSE,Hustle,Natural Cure,Regenerator
+162,Corviknight,Flying,Steel,10,9,10,5,8,7,8,FALSE,Pressure,Unnerve,Mirror Armor
+163,Corvisquire,Flying,,7,7,6,4,6,8,8,FALSE,Keen Eye,Unnerve,Big Pecks
+164,Cosmoem,Psychic,,4,3,13,3,13,4,7,TRUE,Sturdy,,
+165,Cosmog,Psychic,,4,3,3,3,3,4,7,TRUE,Unaware,,
+166,Cottonee,Grass,Fairy,4,3,6,4,5,7,5,FALSE,Prankster,Infiltrator,Chlorophyll
+167,Crabominable,Fighting,Ice,10,13,8,6,7,4,7,FALSE,Hyper Cutter,Iron Fist,Anger Point
+168,Crabrawler,Fighting,,5,8,6,4,5,6,7,FALSE,Hyper Cutter,Iron Fist,Anger Point
+169,Cradily,Rock,Grass,9,8,10,8,11,4,3,FALSE,Suction Cups,,Storm Drain
+170,Cramorant,Flying,Water,7,8,6,8,10,8,8,FALSE,Gulp Missile,,
+171,Cranidos,Rock,,7,12,4,3,3,6,4,FALSE,Mold Breaker,,Sheer Force
+172,Crawdaunt,Water,Dark,6,12,8,9,6,6,3,FALSE,Hyper Cutter,Shell Armor,Adaptability
+173,Cresselia,Psychic,,12,7,11,8,12,8,4,TRUE,Levitate,,
+174,Croagunk,Poison,Fighting,5,6,4,6,4,5,4,FALSE,Anticipation,Dry Skin,Poison Touch
+175,Crobat,Poison,Flying,8,9,8,7,8,13,2,FALSE,Inner Focus,,Infiltrator
+176,Crocalor,Fire,,8,6,8,9,6,5,9,FALSE,Blaze,,Unaware
+177,Croconaw,Water,,6,8,8,6,6,6,2,FALSE,Torrent,,Sheer Force
+178,Crustle,Bug,Rock,7,10,12,6,8,4,5,FALSE,Sturdy,Shell Armor,Weak Armor
+179,Cryogonal,Ice,,8,5,5,10,14,10,5,FALSE,Levitate,,
+180,Cubchoo,Ice,,6,7,4,6,4,4,5,FALSE,Snow Cloak,Slush Rush,Rattled
+181,Cubone,Ground,,5,5,10,4,5,4,1,FALSE,Rock Head,Lightning Rod,Battle Armor
+182,Cufant,Steel,,7,8,5,4,5,4,8,FALSE,Sheer Force,,Heavy Metal
+183,Cursola,Ghost,,6,10,5,14,13,3,8,FALSE,Weak Armor,,Perish Body
+184,Cutiefly,Bug,Fairy,4,4,4,6,4,8,7,FALSE,Honey Gather,Shield Dust,Sweet Veil
+185,Cyclizar,Dragon,Normal,7,10,6,8,6,12,9,FALSE,Shed Skin,,Regenerator
+186,Cyndaquil,Fire,,4,5,4,6,5,6,2,FALSE,Blaze,,Flash Fire
+187,Dachsbun,Fairy,,6,8,12,5,8,10,9,FALSE,Well Baked Body,,Aroma Veil
+188,Darkrai,Dark,,7,9,9,14,9,12,4,FALSE,Bad Dreams,,
+189,Darmanitan,Fire,,10,14,6,3,6,10,5,FALSE,Sheer Force,,Zen Mode
+190,Dartrix,Grass,Flying,8,8,8,7,7,5,7,FALSE,Overgrow,,Long Reach
+191,Darumaka,Fire,,7,9,4,2,4,5,5,FALSE,Hustle,,Inner Focus
+192,Decidueye,Grass,Ghost,8,11,8,10,10,7,7,FALSE,Overgrow,,Long Reach
+193,Dedenne,Electric,Fairy,7,6,6,8,7,10,6,FALSE,Cheek Pouch,Pickup,Plus
+194,Deerling,Normal,Grass,6,6,5,4,5,8,5,FALSE,Chlorophyll,Sap Sipper,Serene Grace
+195,Deino,Dark,Dragon,5,6,5,4,5,4,5,FALSE,Hustle,,
+196,Delcatty,Normal,,7,6,6,6,6,9,3,FALSE,Cute Charm,Normalize,Wonder Skin
+197,Delibird,Ice,Flying,4,6,4,6,4,8,2,FALSE,Vital Spirit,Hustle,Insomnia
+198,Delphox,Fire,Psychic,8,7,7,11,10,10,6,FALSE,Blaze,,Magician
+199,Deoxys,Psychic,,5,15,5,15,5,15,3,FALSE,Pressure,,
+200,Dewgong,Water,Ice,9,7,8,7,10,7,1,FALSE,Thick Fat,Hydration,Ice Body
+201,Dewott,Water,,8,8,6,8,6,6,5,FALSE,Torrent,,Shell Armor
+202,Dewpider,Water,Bug,4,4,5,4,7,3,7,FALSE,Water Bubble,,Water Absorb
+203,Dhelmise,Ghost,Grass,7,13,10,9,9,4,7,FALSE,Steelworker,,
+204,Dialga,Steel,Dragon,10,12,12,15,10,9,4,TRUE,Pressure,,Telepathy
+205,Diancie,Rock,Fairy,5,10,15,10,15,5,6,FALSE,Clear Body,,
+206,Diggersby,Normal,Ground,8,6,8,5,8,8,6,FALSE,Pickup,Cheek Pouch,Huge Power
+207,Diglett,Ground,,1,6,2,4,4,10,1,FALSE,Sand Veil,Arena Trap,Sand Force
+208,Dipplin,Grass,Dragon,8,8,11,10,8,4,9,FALSE,Supersweet Syrup,Gluttony,Sticky Hold
+209,Ditto,Normal,,5,5,5,5,5,5,1,FALSE,Limber,,Imposter
+210,Dodrio,Normal,Flying,6,11,7,6,6,11,1,FALSE,Run Away,Early Bird,Tangled Feet
+211,Doduo,Normal,Flying,4,8,4,4,4,8,1,FALSE,Run Away,Early Bird,Tangled Feet
+212,Dolliv,Grass,Normal,5,5,6,8,8,3,9,FALSE,Early Bird,,Harvest
+213,Dondozo,Water,,15,10,12,6,6,4,9,FALSE,Unaware,Oblivious,Water Veil
+214,Donphan,Ground,,9,12,12,6,6,5,2,FALSE,Sturdy,,Sand Veil
+215,Dottler,Bug,Psychic,5,4,8,5,9,3,8,FALSE,Swarm,Compound Eyes,Telepathy
+216,Doublade,Steel,Ghost,6,11,15,4,5,4,6,FALSE,No Guard,,
+217,Dracovish,Water,Dragon,9,9,10,7,8,8,8,FALSE,Water Absorb,Strong Jaw,Sand Rush
+218,Dracozolt,Electric,Dragon,9,10,9,8,7,8,8,FALSE,Volt Absorb,Hustle,Sand Rush
+219,Dragalge,Poison,Dragon,6,8,9,10,12,4,6,FALSE,Poison Point,Poison Touch,Adaptability
+220,Dragapult,Dragon,Ghost,9,12,8,10,8,14,8,FALSE,Clear Body,Infiltrator,Cursed Body
+221,Dragonair,Dragon,,6,8,6,7,7,7,1,FALSE,Shed Skin,,Marvel Scale
+222,Dragonite,Dragon,Flying,9,13,10,10,10,8,1,FALSE,Inner Focus,,Multiscale
+223,Drakloak,Dragon,Ghost,7,8,5,6,5,10,8,FALSE,Clear Body,Infiltrator,Cursed Body
+224,Drampa,Normal,Dragon,8,6,8,14,9,4,7,FALSE,Berserk,Sap Sipper,Cloud Nine
+225,Drapion,Poison,Dark,7,9,11,6,8,10,4,FALSE,Battle Armor,Sniper,Keen Eye
+226,Dratini,Dragon,,4,6,4,5,5,5,1,FALSE,Shed Skin,,Marvel Scale
+227,Drednaw,Water,Rock,9,12,9,5,7,7,8,FALSE,Strong Jaw,Shell Armor,Swift Swim
+228,Dreepy,Dragon,Ghost,3,6,3,4,3,8,8,FALSE,Clear Body,Infiltrator,Cursed Body
+229,Drifblim,Ghost,Flying,15,8,4,9,5,8,4,FALSE,Aftermath,Unburden,Flare Boost
+230,Drifloon,Ghost,Flying,9,5,3,6,4,7,4,FALSE,Aftermath,Unburden,Flare Boost
+231,Drilbur,Ground,,6,8,4,3,4,7,5,FALSE,Sand Rush,Sand Force,Mold Breaker
+232,Drizzile,Water,,6,6,6,10,6,9,8,FALSE,Torrent,,Sniper
+233,Drowzee,Psychic,,6,5,4,4,9,4,1,FALSE,Insomnia,Forewarn,Inner Focus
+234,Druddigon,Dragon,,8,12,9,6,9,5,5,FALSE,Rough Skin,Sheer Force,Mold Breaker
+235,Dubwool,Normal,,7,8,10,6,9,9,8,FALSE,Fluffy,Steadfast,Bulletproof
+236,Ducklett,Water,Flying,6,4,5,4,5,6,5,FALSE,Keen Eye,Big Pecks,Hydration
+237,Dugtrio,Ground,,4,10,5,5,7,12,1,FALSE,Sand Veil,Arena Trap,Sand Force
+238,Dunsparce,Normal,,10,7,7,6,6,4,2,FALSE,Serene Grace,Run Away,Rattled
+239,Duosion,Psychic,,6,4,5,12,6,3,5,FALSE,Overcoat,Magic Guard,Regenerator
+240,Duraludon,Steel,Dragon,7,10,12,12,5,8,8,FALSE,Light Metal,Heavy Metal,Stalwart
+241,Durant,Bug,Steel,6,11,11,5,5,11,5,FALSE,Swarm,Hustle,Truant
+242,Dusclops,Ghost,,4,7,13,6,13,2,3,FALSE,Pressure,,Frisk
+243,Dusknoir,Ghost,,4,10,14,6,14,4,4,FALSE,Pressure,,Frisk
+244,Duskull,Ghost,,2,4,9,3,9,2,3,FALSE,Levitate,,Frisk
+245,Dustox,Bug,Poison,6,5,7,5,9,6,3,FALSE,Shield Dust,,Compound Eyes
+246,Dwebble,Bug,Rock,5,6,8,4,4,6,5,FALSE,Sturdy,Shell Armor,Weak Armor
+247,Eelektrik,Electric,,6,8,7,8,7,4,5,FALSE,Levitate,,
+248,Eelektross,Electric,,8,12,8,10,8,5,5,FALSE,Levitate,,
+249,Eevee,Normal,,6,6,5,4,6,6,1,FALSE,Run Away,Adaptability,Anticipation
+250,Eiscue,Ice,,8,8,11,6,9,5,8,FALSE,Ice Face,,
+251,Ekans,Poison,,4,6,4,4,5,6,1,FALSE,Intimidate,Shed Skin,Unnerve
+252,Eldegoss,Grass,,6,5,9,8,12,6,8,FALSE,Cotton Down,Regenerator,Effect Spore
+253,Electabuzz,Electric,,6,8,6,10,8,10,1,FALSE,Static,,Vital Spirit
+254,Electivire,Electric,,8,12,7,10,8,10,4,FALSE,Motor Drive,,Vital Spirit
+255,Electrike,Electric,,4,4,4,6,4,6,3,FALSE,Static,Lightning Rod,Minus
+256,Electrode,Electric,,6,5,7,8,8,15,1,FALSE,Soundproof,Static,Aftermath
+257,Elekid,Electric,,4,6,4,6,6,10,2,FALSE,Static,,Vital Spirit
+258,Elgyem,Psychic,,6,6,6,8,6,3,5,FALSE,Telepathy,Synchronize,Analytic
+259,Emboar,Fire,Fighting,11,12,6,10,6,6,5,FALSE,Blaze,,Reckless
+260,Emolga,Electric,Flying,6,8,6,8,6,10,5,FALSE,Static,,Motor Drive
+261,Empoleon,Water,Steel,8,9,9,11,10,6,4,FALSE,Torrent,,Competitive
+262,Enamorus,Fairy,Flying,7,12,7,14,8,11,8,TRUE,Cute Charm,,Contrary
+263,Entei,Fire,,12,12,8,9,8,10,2,TRUE,Pressure,,Inner Focus
+264,Escavalier,Bug,Steel,7,14,10,6,10,2,5,FALSE,Swarm,Shell Armor,Overcoat
+265,Espathra,Psychic,,10,6,6,10,6,10,9,FALSE,Opportunist,Frisk,Speed Boost
+266,Espeon,Psychic,,6,6,6,13,10,11,2,FALSE,Synchronize,,Magic Bounce
+267,Espurr,Psychic,,6,5,5,6,6,7,6,FALSE,Keen Eye,Infiltrator,Own Tempo
+268,Eternatus,Poison,Dragon,14,8,10,14,10,13,8,TRUE,Pressure,,
+269,Excadrill,Ground,Steel,11,14,6,5,6,9,5,FALSE,Sand Rush,Sand Force,Mold Breaker
+270,Exeggcute,Grass,Psychic,6,4,8,6,4,4,1,FALSE,Chlorophyll,,Harvest
+271,Exeggutor,Grass,Psychic,10,10,8,12,8,6,1,FALSE,Chlorophyll,,Harvest
+272,Exploud,Normal,,10,9,6,9,7,7,3,FALSE,Soundproof,,Scrappy
+273,Falinks,Fighting,,6,10,10,7,6,8,8,FALSE,Battle Armor,,Defiant
+274,Farfetch_d,Normal,Flying,5,9,6,6,6,6,1,FALSE,Keen Eye,Inner Focus,Defiant
+275,Farigiraf,Normal,Psychic,12,9,7,11,7,6,9,FALSE,Cud Chew,Armor Tail,Sap Sipper
+276,Fearow,Normal,Flying,6,9,6,6,6,10,1,FALSE,Keen Eye,,Sniper
+277,Feebas,Water,,2,2,2,1,6,8,3,FALSE,Swift Swim,Oblivious,Adaptability
+278,Fennekin,Fire,,4,4,4,6,6,6,6,FALSE,Blaze,,Magician
+279,Feraligatr,Water,,8,10,10,8,8,8,2,FALSE,Torrent,,Sheer Force
+280,Ferroseed,Grass,Steel,4,5,9,2,9,1,5,FALSE,Iron Barbs,,
+281,Ferrothorn,Grass,Steel,7,9,13,5,12,2,5,FALSE,Iron Barbs,,Anticipation
+282,Fezandipiti,Poison,Fairy,9,9,8,7,12,10,9,TRUE,Toxic Chain,,Technician
+283,Fidough,Fairy,,4,6,7,3,6,6,9,FALSE,Own Tempo,,Klutz
+284,Finizen,Water,,7,4,4,4,4,8,9,FALSE,Water Veil,,
+285,Finneon,Water,,5,5,6,5,6,7,4,FALSE,Swift Swim,Storm Drain,Water Veil
+286,Flaaffy,Electric,,7,6,6,8,6,4,2,FALSE,Static,,Plus
+287,Flabebe,Fairy,,4,4,4,6,8,4,6,FALSE,Flower Veil,,Symbiosis
+288,Flamigo,Flying,Fighting,8,12,7,8,6,9,9,FALSE,Scrappy,Tangled Feet,Costar
+289,Flapple,Grass,Dragon,7,11,8,10,6,7,8,FALSE,Ripen,Gluttony,Hustle
+290,Flareon,Fire,,6,13,6,10,11,6,1,FALSE,Flash Fire,,Guts
+291,Fletchinder,Fire,Flying,6,7,6,6,5,8,6,FALSE,Flame Body,,Gale Wings
+292,Fletchling,Normal,Flying,4,5,4,4,4,6,6,FALSE,Big Pecks,,Gale Wings
+293,Flittle,Psychic,,3,4,3,6,3,8,9,FALSE,Anticipation,Frisk,Speed Boost
+294,Floatzel,Water,,8,10,6,8,5,12,4,FALSE,Swift Swim,,Water Veil
+295,Floette,Fairy,,5,4,5,8,10,5,6,FALSE,Flower Veil,,Symbiosis
+296,Floragato,Grass,,6,8,6,6,6,8,9,FALSE,Overgrow,,Protean
+297,Florges,Fairy,,8,6,7,11,15,8,6,FALSE,Flower Veil,,Symbiosis
+298,Flutter Mane,Ghost,Fairy,6,6,6,14,14,14,9,FALSE,Protosynthesis,,
+299,Flygon,Ground,Dragon,8,10,8,8,8,10,3,FALSE,Levitate,,
+300,Fomantis,Grass,,4,6,4,5,4,4,7,FALSE,Leaf Guard,,Contrary
+301,Foongus,Grass,Poison,7,6,4,6,6,2,5,FALSE,Effect Spore,,Regenerator
+302,Forretress,Bug,Steel,8,9,14,6,6,4,2,FALSE,Sturdy,,Overcoat
+303,Fraxure,Dragon,,7,12,7,4,5,7,5,FALSE,Rivalry,Mold Breaker,Unnerve
+304,Frigibax,Dragon,Ice,6,8,4,4,4,6,9,FALSE,Thermal Exchange,,Ice Body
+305,Frillish,Water,Ghost,6,4,5,6,8,4,5,FALSE,Water Absorb,Cursed Body,Damp
+306,Froakie,Water,,4,6,4,6,4,7,6,FALSE,Torrent,,Protean
+307,Frogadier,Water,,5,6,5,8,6,10,6,FALSE,Torrent,,Protean
+308,Froslass,Ice,Ghost,7,8,7,8,7,11,4,FALSE,Snow Cloak,,Cursed Body
+309,Frosmoth,Ice,Bug,7,6,6,12,9,6,8,FALSE,Shield Dust,,Ice Scales
+310,Fuecoco,Fire,,7,4,6,6,4,4,9,FALSE,Blaze,,Unaware
+311,Furfrou,Normal,,8,8,6,6,9,10,6,FALSE,Fur Coat,,
+312,Furret,Normal,,8,8,6,4,6,9,2,FALSE,Run Away,Keen Eye,Frisk
+313,Gabite,Dragon,Ground,7,9,6,5,6,8,4,FALSE,Sand Veil,,Rough Skin
+314,Gallade,Psychic,Fighting,7,12,6,6,12,8,4,FALSE,Steadfast,Sharpness,Justified
+315,Galvantula,Bug,Electric,7,8,6,10,6,11,5,FALSE,Compound Eyes,Unnerve,Swarm
+316,Garbodor,Poison,,8,10,8,6,8,8,5,FALSE,Stench,Weak Armor,Aftermath
+317,Garchomp,Dragon,Ground,11,13,10,8,8,10,4,FALSE,Sand Veil,,Rough Skin
+318,Gardevoir,Psychic,Fairy,7,6,6,12,12,8,3,FALSE,Synchronize,Trace,Telepathy
+319,Garganacl,Rock,,10,10,13,4,9,4,9,FALSE,Purifying Salt,Sturdy,Clear Body
+320,Gastly,Ghost,Poison,3,4,3,10,4,8,1,FALSE,Levitate,,
+321,Gastrodon,Water,Ground,11,8,7,9,8,4,4,FALSE,Sticky Hold,Storm Drain,Sand Force
+322,Genesect,Bug,Steel,7,12,10,12,10,10,5,FALSE,Download,,
+323,Gengar,Ghost,Poison,6,6,6,13,8,11,1,FALSE,Cursed Body,,
+324,Geodude,Rock,Ground,4,8,10,3,3,2,1,FALSE,Rock Head,Sturdy,Sand Veil
+325,Gholdengo,Steel,Ghost,9,6,10,13,9,8,9,FALSE,Good As Gold,,
+326,Gible,Dragon,Ground,6,7,4,4,4,4,4,FALSE,Sand Veil,,Rough Skin
+327,Gigalith,Rock,,8,14,13,6,8,2,5,FALSE,Sturdy,Sand Stream,Sand Force
+328,Gimmighoul,Ghost,,4,3,7,8,7,1,9,FALSE,Rattled,,
+329,Girafarig,Normal,Psychic,7,8,6,9,6,8,2,FALSE,Inner Focus,Early Bird,Sap Sipper
+330,Giratina,Ghost,Dragon,15,10,12,10,12,9,4,TRUE,Pressure,,Telepathy
+331,Glaceon,Ice,,6,6,11,13,10,6,4,FALSE,Snow Cloak,,Ice Body
+332,Glalie,Ice,,8,8,8,8,8,8,3,FALSE,Inner Focus,Ice Body,Moody
+333,Glameow,Normal,,5,6,4,4,4,8,4,FALSE,Limber,Own Tempo,Keen Eye
+334,Glastrier,Ice,,10,14,13,6,11,3,8,TRUE,Chilling Neigh,,
+335,Gligar,Ground,Flying,6,8,10,4,6,8,2,FALSE,Hyper Cutter,Sand Veil,Immunity
+336,Glimmet,Rock,Poison,5,4,4,10,6,6,9,FALSE,Toxic Debris,,Corrosion
+337,Glimmora,Rock,Poison,8,6,9,13,8,9,9,FALSE,Toxic Debris,,Corrosion
+338,Gliscor,Ground,Flying,8,10,12,4,8,10,4,FALSE,Hyper Cutter,Sand Veil,Poison Heal
+339,Gloom,Grass,Poison,6,6,7,8,8,4,1,FALSE,Chlorophyll,,Stench
+340,Gogoat,Grass,,12,10,6,10,8,7,6,FALSE,Sap Sipper,,Grass Pelt
+341,Golbat,Poison,Flying,8,8,7,6,8,9,1,FALSE,Inner Focus,,Infiltrator
+342,Goldeen,Water,,4,7,6,4,5,6,1,FALSE,Swift Swim,Water Veil,Lightning Rod
+343,Golduck,Water,,8,8,8,10,8,8,1,FALSE,Damp,Cloud Nine,Swift Swim
+344,Golem,Rock,Ground,8,12,13,6,6,4,1,FALSE,Rock Head,Sturdy,Sand Veil
+345,Golett,Ground,Ghost,6,7,5,4,5,4,5,FALSE,Iron Fist,Klutz,No Guard
+346,Golisopod,Bug,Water,8,12,14,6,9,4,7,FALSE,Emergency Exit,,
+347,Golurk,Ground,Ghost,9,12,8,6,8,6,5,FALSE,Iron Fist,Klutz,No Guard
+348,Goodra,Dragon,,9,10,7,11,15,8,6,FALSE,Sap Sipper,Hydration,Gooey
+349,Goomy,Dragon,,4,5,4,6,8,4,6,FALSE,Sap Sipper,Hydration,Gooey
+350,Gorebyss,Water,,6,8,10,11,8,5,3,FALSE,Swift Swim,,Hydration
+351,Gossifleur,Grass,,4,4,6,4,6,1,8,FALSE,Cotton Down,Regenerator,Effect Spore
+352,Gothita,Psychic,,4,3,5,6,6,4,5,FALSE,Frisk,Competitive,Shadow Tag
+353,Gothitelle,Psychic,,7,6,10,10,11,6,5,FALSE,Frisk,Competitive,Shadow Tag
+354,Gothorita,Psychic,,6,4,7,8,8,6,5,FALSE,Frisk,Competitive,Shadow Tag
+355,Gourgeist,Ghost,Grass,8,10,12,6,8,5,6,FALSE,Pickup,Frisk,Insomnia
+356,Grafaiai,Poison,Normal,6,10,6,8,7,11,9,FALSE,Unburden,Poison Touch,Prankster
+357,Granbull,Fairy,,9,12,8,6,6,4,2,FALSE,Intimidate,Quick Feet,Rattled
+358,Grapploct,Fighting,,8,12,9,7,8,4,8,FALSE,Limber,,Technician
+359,Graveler,Rock,Ground,6,10,12,4,4,4,1,FALSE,Rock Head,Sturdy,Sand Veil
+360,Great Tusk,Ground,Fighting,12,13,13,5,5,9,9,FALSE,Protosynthesis,,
+361,Greavard,Ghost,,5,6,6,3,6,3,9,FALSE,Pickup,,Fluffy
+362,Greedent,Normal,,12,10,10,6,8,2,8,FALSE,Cheek Pouch,,Gluttony
+363,Greninja,Water,Dark,7,10,7,10,7,12,6,FALSE,Torrent,,Protean
+364,Grimer,Poison,,8,8,5,4,5,2,1,FALSE,Stench,Sticky Hold,Poison Touch
+365,Grimmsnarl,Dark,Fairy,10,12,6,10,8,6,8,FALSE,Prankster,Frisk,Pickpocket
+366,Grookey,Grass,,5,6,5,4,4,6,8,FALSE,Overgrow,,Grassy Surge
+367,Grotle,Grass,,8,9,8,6,6,4,4,FALSE,Overgrow,,Shell Armor
+368,Groudon,Ground,,10,15,14,10,9,9,3,TRUE,Drought,,
+369,Grovyle,Grass,,5,6,4,8,6,10,3,FALSE,Overgrow,,Unburden
+370,Growlithe,Fire,,6,7,4,7,5,6,1,FALSE,Intimidate,Flash Fire,Justified
+371,Grubbin,Bug,,5,6,4,6,4,5,7,FALSE,Swarm,,
+372,Grumpig,Psychic,,8,4,6,9,11,8,3,FALSE,Thick Fat,Own Tempo,Gluttony
+373,Gulpin,Poison,,7,4,5,4,5,4,3,FALSE,Liquid Ooze,Sticky Hold,Gluttony
+374,Gumshoos,Normal,,9,11,6,6,6,4,7,FALSE,Stakeout,Strong Jaw,Adaptability
+375,Gurdurr,Fighting,,8,10,8,4,5,4,5,FALSE,Guts,Sheer Force,Iron Fist
+376,Guzzlord,Dark,Dragon,22,10,5,10,5,4,7,FALSE,Beast Boost,,
+377,Gyarados,Water,Flying,10,12,8,6,10,8,1,FALSE,Intimidate,,Moxie
+378,Hakamo O,Dragon,Fighting,6,8,9,6,7,6,7,FALSE,Bulletproof,Soundproof,Overcoat
+379,Happiny,Normal,,10,0,0,2,6,3,4,FALSE,Natural Cure,Serene Grace,Friend Guard
+380,Hariyama,Fighting,,14,12,6,4,6,5,3,FALSE,Thick Fat,Guts,Sheer Force
+381,Hatenna,Psychic,,4,3,4,6,5,4,8,FALSE,Healer,Anticipation,Magic Bounce
+382,Hatterene,Psychic,Fairy,6,9,10,14,10,3,8,FALSE,Healer,Anticipation,Magic Bounce
+383,Hattrem,Psychic,,6,4,6,9,7,5,8,FALSE,Healer,Anticipation,Magic Bounce
+384,Haunter,Ghost,Poison,4,5,4,12,6,10,1,FALSE,Levitate,,
+385,Hawlucha,Fighting,Flying,8,9,8,7,6,12,6,FALSE,Limber,Unburden,Mold Breaker
+386,Haxorus,Dragon,,8,15,9,6,7,10,5,FALSE,Rivalry,Mold Breaker,Unnerve
+387,Heatmor,Fire,,8,10,7,10,7,6,5,FALSE,Gluttony,Flash Fire,White Smoke
+388,Heatran,Fire,Steel,9,9,11,13,11,8,4,TRUE,Flash Fire,,Flame Body
+389,Heliolisk,Electric,Normal,6,6,5,11,9,11,6,FALSE,Dry Skin,Sand Veil,Solar Power
+390,Helioptile,Electric,Normal,4,4,3,6,4,7,6,FALSE,Dry Skin,Sand Veil,Solar Power
+391,Heracross,Bug,Fighting,8,12,8,4,10,8,2,FALSE,Swarm,Guts,Moxie
+392,Herdier,Normal,,6,8,6,4,6,6,5,FALSE,Intimidate,Sand Rush,Scrappy
+393,Hippopotas,Ground,,7,7,8,4,4,3,4,FALSE,Sand Stream,,Sand Force
+394,Hippowdon,Ground,,11,11,12,7,7,5,4,FALSE,Sand Stream,,Sand Force
+395,Hitmonchan,Fighting,,5,10,8,4,11,8,1,FALSE,Keen Eye,Iron Fist,Inner Focus
+396,Hitmonlee,Fighting,,5,12,5,4,11,9,1,FALSE,Limber,Reckless,Unburden
+397,Hitmontop,Fighting,,5,10,10,4,11,7,2,FALSE,Intimidate,Technician,Steadfast
+398,Ho Oh,Fire,Flying,11,13,9,11,15,9,2,TRUE,Pressure,,Regenerator
+399,Honchkrow,Dark,Flying,10,12,5,10,5,7,4,FALSE,Insomnia,Super Luck,Moxie
+400,Honedge,Steel,Ghost,4,8,10,4,4,3,6,FALSE,No Guard,,
+401,Hoopa Hoopa,Psychic,Ghost,8,11,6,15,13,7,6,FALSE,Magician,,
+402,Hoothoot,Normal,Flying,6,3,3,4,6,5,2,FALSE,Insomnia,Keen Eye,Tinted Lens
+403,Hoppip,Grass,Flying,4,4,4,4,6,5,2,FALSE,Chlorophyll,Leaf Guard,Infiltrator
+404,Horsea,Water,,3,4,7,7,2,6,1,FALSE,Swift Swim,Sniper,Damp
+405,Houndoom,Dark,Fire,8,9,5,11,8,10,2,FALSE,Early Bird,Flash Fire,Unnerve
+406,Houndour,Dark,Fire,4,6,3,8,5,6,2,FALSE,Early Bird,Flash Fire,Unnerve
+407,Houndstone,Ghost,,7,10,10,5,10,7,9,FALSE,Sand Rush,,Fluffy
+408,Huntail,Water,,6,10,10,9,8,5,3,FALSE,Swift Swim,,Water Veil
+409,Hydrapple,Grass,Dragon,11,8,11,12,8,4,9,FALSE,Supersweet Syrup,Regenerator,Sticky Hold
+410,Hydreigon,Dark,Dragon,9,10,9,12,9,10,5,FALSE,Levitate,,
+411,Hypno,Psychic,,8,7,7,7,12,7,1,FALSE,Insomnia,Forewarn,Inner Focus
+412,Igglybuff,Normal,Fairy,9,3,2,4,2,2,2,FALSE,Cute Charm,Competitive,Friend Guard
+413,Illumise,Bug,,6,5,8,7,8,8,3,FALSE,Oblivious,Tinted Lens,Prankster
+414,Impidimp,Dark,Fairy,4,4,3,6,4,5,8,FALSE,Prankster,Frisk,Pickpocket
+415,Incineroar,Fire,Dark,10,12,9,8,9,6,7,FALSE,Blaze,,Intimidate
+416,Indeedee,Psychic,Normal,6,6,6,10,10,10,8,FALSE,Inner Focus,Synchronize,Psychic Surge
+417,Infernape,Fire,Fighting,8,10,7,10,7,11,4,FALSE,Blaze,,Iron Fist
+418,Inkay,Dark,Psychic,5,5,5,4,5,4,6,FALSE,Contrary,Suction Cups,Infiltrator
+419,Inteleon,Water,,7,8,6,12,6,12,8,FALSE,Torrent,,Sniper
+420,Iron Bundle,Ice,Water,6,8,11,12,6,14,9,FALSE,Quark Drive,,
+421,Iron Crown,Steel,Psychic,9,7,10,12,11,10,9,FALSE,Quark Drive,,
+422,Iron Hands,Fighting,Electric,15,14,11,5,7,5,9,FALSE,Quark Drive,,
+423,Iron Jugulis,Dark,Flying,9,8,9,12,8,11,9,FALSE,Quark Drive,,
+424,Iron Leaves,Grass,Psychic,9,13,9,7,11,10,9,FALSE,Quark Drive,,
+425,Iron Moth,Fire,Poison,8,7,6,14,11,11,9,FALSE,Quark Drive,,
+426,Iron Thorns,Rock,Electric,10,13,11,7,8,7,9,FALSE,Quark Drive,,
+427,Iron Treads,Ground,Steel,9,11,12,7,7,11,9,FALSE,Quark Drive,,
+428,Iron Valiant,Fairy,Fighting,7,13,9,12,6,12,9,FALSE,Quark Drive,,
+429,Ivysaur,Grass,Poison,6,6,6,8,8,6,1,FALSE,Overgrow,,Chlorophyll
+430,Jangmo O,Dragon,,4,6,6,4,4,4,7,FALSE,Bulletproof,Soundproof,Overcoat
+431,Jellicent,Water,Ghost,10,6,7,8,10,6,5,FALSE,Water Absorb,Cursed Body,Damp
+432,Jigglypuff,Normal,Fairy,12,4,2,4,2,2,1,FALSE,Cute Charm,Competitive,Friend Guard
+433,Jirachi,Steel,Psychic,10,10,10,10,10,10,3,FALSE,Serene Grace,,
+434,Jolteon,Electric,,6,6,6,11,10,13,1,FALSE,Volt Absorb,,Quick Feet
+435,Joltik,Bug,Electric,5,5,5,6,5,6,5,FALSE,Compound Eyes,Unnerve,Swarm
+436,Jumpluff,Grass,Flying,8,6,7,6,10,11,2,FALSE,Chlorophyll,Leaf Guard,Infiltrator
+437,Jynx,Ice,Psychic,6,5,4,12,10,10,1,FALSE,Oblivious,Forewarn,Dry Skin
+438,Kabuto,Rock,Water,3,8,9,6,4,6,1,FALSE,Swift Swim,Battle Armor,Weak Armor
+439,Kabutops,Rock,Water,6,12,10,6,7,8,1,FALSE,Swift Swim,Battle Armor,Weak Armor
+440,Kadabra,Psychic,,4,4,3,12,7,10,1,FALSE,Synchronize,Inner Focus,Magic Guard
+441,Kakuna,Bug,Poison,4,2,5,2,2,4,1,FALSE,Shed Skin,,
+442,Kangaskhan,Normal,,10,10,8,4,8,9,1,FALSE,Early Bird,Scrappy,Inner Focus
+443,Karrablast,Bug,,5,8,4,4,4,6,5,FALSE,Swarm,Shed Skin,No Guard
+444,Kartana,Grass,Steel,6,18,13,6,3,11,7,FALSE,Beast Boost,,
+445,Kecleon,Normal,,6,9,7,6,12,4,3,FALSE,Color Change,,Protean
+446,Keldeo,Water,Fighting,9,7,9,13,9,11,5,FALSE,Justified,,
+447,Kilowattrel,Electric,Flying,7,7,6,10,6,12,9,FALSE,Wind Power,Volt Absorb,Competitive
+448,Kingambit,Dark,Steel,10,14,12,6,8,5,9,FALSE,Defiant,Supreme Overlord,Pressure
+449,Kingdra,Water,Dragon,8,10,10,10,10,8,2,FALSE,Swift Swim,Sniper,Damp
+450,Kingler,Water,,6,13,12,5,5,8,1,FALSE,Hyper Cutter,Shell Armor,Sheer Force
+451,Kirlia,Psychic,Fairy,4,4,4,6,6,5,3,FALSE,Synchronize,Trace,Telepathy
+452,Klang,Steel,,6,8,10,7,8,5,5,FALSE,Plus,Minus,Clear Body
+453,Klawf,Rock,,7,10,12,4,6,8,9,FALSE,Anger Shell,Shell Armor,Regenerator
+454,Kleavor,Bug,Rock,7,14,10,4,7,8,8,FALSE,Swarm,Sheer Force,Sharpness
+455,Klefki,Steel,Fairy,6,8,9,8,9,8,6,FALSE,Prankster,,Magician
+456,Klink,Steel,,4,6,7,4,6,3,5,FALSE,Plus,Minus,Clear Body
+457,Klinklang,Steel,,6,10,12,7,8,9,5,FALSE,Plus,Minus,Clear Body
+458,Koffing,Poison,,4,6,10,6,4,4,1,FALSE,Levitate,Neutralizing Gas,Stench
+459,Komala,Normal,,6,12,6,8,10,6,7,FALSE,Comatose,,
+460,Kommo O,Dragon,Fighting,8,11,12,10,10,8,7,FALSE,Bulletproof,Soundproof,Overcoat
+461,Koraidon,Fighting,Dragon,10,14,12,8,10,14,9,TRUE,Orichalcum Pulse,,
+462,Krabby,Water,,3,10,9,2,2,5,1,FALSE,Hyper Cutter,Shell Armor,Sheer Force
+463,Kricketot,Bug,,4,2,4,2,4,2,4,FALSE,Shed Skin,,Run Away
+464,Kricketune,Bug,,8,8,5,6,5,6,4,FALSE,Swarm,,Technician
+465,Krokorok,Ground,Dark,6,8,4,4,4,7,5,FALSE,Intimidate,Moxie,Anger Point
+466,Krookodile,Ground,Dark,10,12,8,6,7,9,5,FALSE,Intimidate,Moxie,Anger Point
+467,Kubfu,Fighting,,6,9,6,5,5,7,8,TRUE,Inner Focus,,
+468,Kyogre,Water,,10,10,9,15,14,9,3,TRUE,Drizzle,,
+469,Kyurem,Dragon,Ice,12,13,9,13,9,10,5,TRUE,Pressure,,
+470,Lairon,Steel,Rock,6,9,14,5,5,4,3,FALSE,Sturdy,Rock Head,Heavy Metal
+471,Lampent,Ghost,Fire,6,4,6,10,6,6,5,FALSE,Flash Fire,Flame Body,Infiltrator
+472,Landorus,Ground,Flying,9,12,9,12,8,10,5,TRUE,Sand Force,,Sheer Force
+473,Lanturn,Water,Electric,12,6,6,8,8,7,2,FALSE,Volt Absorb,Illuminate,Water Absorb
+474,Lapras,Water,Ice,13,8,8,8,10,6,1,FALSE,Water Absorb,Shell Armor,Hydration
+475,Larvesta,Bug,Fire,6,8,6,5,6,6,5,FALSE,Flame Body,,Swarm
+476,Larvitar,Rock,Ground,5,6,5,4,5,4,2,FALSE,Guts,,Sand Veil
+477,Latias,Dragon,Psychic,8,8,9,11,13,11,3,TRUE,Levitate,,
+478,Latios,Dragon,Psychic,8,9,8,13,11,11,3,TRUE,Levitate,,
+479,Leafeon,Grass,,6,11,13,6,6,10,4,FALSE,Leaf Guard,,Chlorophyll
+480,Leavanny,Bug,Grass,8,10,8,7,8,9,5,FALSE,Swarm,Chlorophyll,Overcoat
+481,Lechonk,Normal,,5,4,4,4,4,4,9,FALSE,Aroma Veil,Gluttony,Thick Fat
+482,Ledian,Bug,Flying,6,4,5,6,11,8,2,FALSE,Swarm,Early Bird,Iron Fist
+483,Ledyba,Bug,Flying,4,2,3,4,8,6,2,FALSE,Swarm,Early Bird,Rattled
+484,Lickilicky,Normal,,11,8,10,8,10,5,4,FALSE,Own Tempo,Oblivious,Cloud Nine
+485,Lickitung,Normal,,9,6,8,6,8,3,1,FALSE,Own Tempo,Oblivious,Cloud Nine
+486,Liepard,Dark,,6,9,5,9,5,11,5,FALSE,Limber,Unburden,Prankster
+487,Lileep,Rock,Grass,7,4,8,6,9,2,3,FALSE,Suction Cups,,Storm Drain
+488,Lilligant,Grass,,7,6,8,11,8,9,5,FALSE,Chlorophyll,Own Tempo,Leaf Guard
+489,Lillipup,Normal,,4,6,4,2,4,6,5,FALSE,Vital Spirit,Pickup,Run Away
+490,Linoone,Normal,,8,7,6,5,6,10,3,FALSE,Pickup,Gluttony,Quick Feet
+491,Litleo,Fire,Normal,6,5,6,7,5,7,6,FALSE,Rivalry,Unnerve,Moxie
+492,Litten,Fire,,4,6,4,6,4,7,7,FALSE,Blaze,,Intimidate
+493,Litwick,Ghost,Fire,5,3,6,6,6,2,5,FALSE,Flash Fire,Flame Body,Infiltrator
+494,Lokix,Bug,Dark,7,10,8,5,6,9,9,FALSE,Swarm,,Tinted Lens
+495,Lombre,Water,Grass,6,5,5,6,7,5,3,FALSE,Swift Swim,Rain Dish,Own Tempo
+496,Lopunny,Normal,,6,8,8,5,10,10,4,FALSE,Cute Charm,Klutz,Limber
+497,Lotad,Water,Grass,4,3,3,4,5,3,3,FALSE,Swift Swim,Rain Dish,Own Tempo
+498,Loudred,Normal,,8,7,4,7,4,5,3,FALSE,Soundproof,,Scrappy
+499,Lucario,Fighting,Steel,7,11,7,12,7,9,4,FALSE,Steadfast,Inner Focus,Justified
+500,Ludicolo,Water,Grass,8,7,7,9,10,7,3,FALSE,Swift Swim,Rain Dish,Own Tempo
+501,Lugia,Psychic,Flying,11,9,13,9,15,11,2,TRUE,Pressure,,Multiscale
+502,Lumineon,Water,,7,7,8,7,9,9,4,FALSE,Swift Swim,Storm Drain,Water Veil
+503,Lunala,Psychic,Ghost,14,11,9,14,11,10,7,TRUE,Shadow Shield,,
+504,Lunatone,Rock,Psychic,9,6,6,10,8,7,3,FALSE,Levitate,,
+505,Lurantis,Grass,,7,10,9,8,9,4,7,FALSE,Leaf Guard,,Contrary
+506,Luvdisc,Water,,4,3,6,4,6,10,3,FALSE,Swift Swim,,Hydration
+507,Luxio,Electric,,6,8,5,6,5,6,4,FALSE,Rivalry,Intimidate,Guts
+508,Luxray,Electric,,8,12,8,10,8,7,4,FALSE,Rivalry,Intimidate,Guts
+509,Lycanroc Midday,Rock,,8,12,6,6,6,11,7,FALSE,Keen Eye,Sand Rush,Steadfast
+510,Mabosstiff,Dark,,8,12,9,6,7,8,9,FALSE,Intimidate,Guard Dog,Stakeout
+511,Machamp,Fighting,,9,13,8,6,8,6,1,FALSE,Guts,No Guard,Steadfast
+512,Machoke,Fighting,,8,10,7,5,6,4,1,FALSE,Guts,No Guard,Steadfast
+513,Machop,Fighting,,7,8,5,4,4,4,1,FALSE,Guts,No Guard,Steadfast
+514,Magby,Fire,,4,8,4,7,6,8,2,FALSE,Flame Body,,Vital Spirit
+515,Magcargo,Fire,Rock,6,5,12,9,8,3,2,FALSE,Magma Armor,Flame Body,Weak Armor
+516,Magearna,Steel,Fairy,8,10,12,13,12,6,7,FALSE,Soul Heart,,
+517,Magikarp,Water,,2,1,6,2,2,8,1,FALSE,Swift Swim,,Rattled
+518,Magmar,Fire,,6,10,6,10,8,9,1,FALSE,Flame Body,,Vital Spirit
+519,Magmortar,Fire,,8,10,7,12,10,8,4,FALSE,Flame Body,,Vital Spirit
+520,Magnemite,Electric,Steel,2,4,7,10,6,4,1,FALSE,Magnet Pull,Sturdy,Analytic
+521,Magneton,Electric,Steel,5,6,10,12,7,7,1,FALSE,Magnet Pull,Sturdy,Analytic
+522,Magnezone,Electric,Steel,7,7,12,13,9,6,4,FALSE,Magnet Pull,Sturdy,Analytic
+523,Makuhita,Fighting,,7,6,3,2,3,2,3,FALSE,Thick Fat,Guts,Sheer Force
+524,Malamar,Dark,Psychic,9,9,9,7,8,7,6,FALSE,Contrary,Suction Cups,Infiltrator
+525,Mamoswine,Ice,Ground,11,13,8,7,6,8,4,FALSE,Oblivious,Snow Cloak,Thick Fat
+526,Manaphy,Water,,10,10,10,10,10,10,4,FALSE,Hydration,,
+527,Mandibuzz,Dark,Flying,11,6,10,6,10,8,5,FALSE,Big Pecks,Overcoat,Weak Armor
+528,Manectric,Electric,,7,8,6,10,6,10,3,FALSE,Static,Lightning Rod,Minus
+529,Mankey,Fighting,,4,8,4,4,4,7,1,FALSE,Vital Spirit,Anger Point,Defiant
+530,Mantine,Water,Flying,8,4,7,8,14,7,2,FALSE,Swift Swim,Water Absorb,Water Veil
+531,Mantyke,Water,Flying,4,2,5,6,12,5,4,FALSE,Swift Swim,Water Absorb,Water Veil
+532,Maractus,Grass,,8,9,7,11,7,6,5,FALSE,Water Absorb,Chlorophyll,Storm Drain
+533,Mareanie,Poison,Water,5,5,6,4,5,4,7,FALSE,Merciless,Limber,Regenerator
+534,Mareep,Electric,,6,4,4,6,4,4,2,FALSE,Static,,Plus
+535,Marill,Water,Fairy,7,2,5,2,5,4,2,FALSE,Thick Fat,Huge Power,Sap Sipper
+536,Marowak,Ground,,6,8,11,5,8,4,1,FALSE,Rock Head,Lightning Rod,Battle Armor
+537,Marshadow,Fighting,Ghost,9,12,8,9,9,12,7,FALSE,Technician,,
+538,Marshtomp,Water,Ground,7,8,7,6,7,5,3,FALSE,Torrent,,Damp
+539,Maschiff,Dark,,6,8,6,4,5,5,9,FALSE,Intimidate,Run Away,Stakeout
+540,Masquerain,Bug,Flying,7,6,6,10,8,8,3,FALSE,Intimidate,,Unnerve
+541,Maushold,Normal,,7,8,7,6,8,11,9,FALSE,Friend Guard,Cheek Pouch,Technician
+542,Mawile,Steel,Fairy,5,8,8,6,6,5,3,FALSE,Hyper Cutter,Intimidate,Sheer Force
+543,Medicham,Fighting,Psychic,6,6,8,6,8,8,3,FALSE,Pure Power,,Telepathy
+544,Meditite,Fighting,Psychic,3,4,6,4,6,6,3,FALSE,Pure Power,,Telepathy
+545,Mega Abomasnow,Grass,Ice,9,13,10,13,10,3,4,FALSE,Snow Warning,,Soundproof
+546,Mega Absol,Dark,,6,15,6,12,6,12,3,FALSE,Pressure,Super Luck,Justified
+547,Mega Aerodactyl,Rock,Flying,8,14,8,7,10,15,1,FALSE,Rock Head,Pressure,Unnerve
+548,Mega Aggron,Steel,,7,14,23,6,8,5,3,FALSE,Sturdy,Rock Head,Heavy Metal
+549,Mega Alakazam,Psychic,,6,5,6,18,10,15,1,FALSE,Synchronize,Inner Focus,Magic Guard
+550,Mega Altaria,Dragon,Fairy,8,11,11,11,10,8,3,FALSE,Natural Cure,,Cloud Nine
+551,Mega Ampharos,Electric,Dragon,9,10,10,16,11,4,2,FALSE,Static,,Plus
+552,Mega Audino,Normal,Fairy,10,6,13,8,13,5,5,FALSE,Healer,Regenerator,Klutz
+553,Mega Banette,Ghost,,6,16,8,9,8,8,3,FALSE,Insomnia,Frisk,Cursed Body
+554,Mega Beedrill,Bug,Poison,6,15,4,2,8,14,1,FALSE,Swarm,,Sniper
+555,Mega Blastoise,Water,,8,10,12,14,12,8,1,FALSE,Torrent,,Rain Dish
+556,Mega Blaziken,Fire,Fighting,8,16,8,13,8,10,3,FALSE,Blaze,,Speed Boost
+557,Mega Camerupt,Fire,Ground,7,12,10,14,10,2,3,FALSE,Magma Armor,Solid Rock,Anger Point
+558,Mega Charizard X,Fire,Dragon,8,13,11,13,8,10,1,FALSE,Blaze,,Solar Power
+559,Mega Charizard Y,Fire,Flying,8,10,8,16,12,10,1,FALSE,Blaze,,Solar Power
+560,Mega Diancie,Rock,Fairy,5,16,11,16,11,11,6,TRUE,Clear Body,,
+561,Mega Gallade,Psychic,Fighting,7,16,10,6,12,11,4,FALSE,Steadfast,Sharpness,Justified
+562,Mega Garchomp,Dragon,Ground,11,17,12,12,10,9,4,FALSE,Sand Veil,,Rough Skin
+563,Mega Gardevoir,Psychic,Fairy,7,8,6,16,14,10,3,FALSE,Synchronize,Trace,Telepathy
+564,Mega Gengar,Ghost,Poison,6,6,8,17,10,13,1,FALSE,Cursed Body,,
+565,Mega Glalie,Ice,,8,12,8,12,8,10,3,FALSE,Inner Focus,Ice Body,Moody
+566,Mega Gyarados,Water,Dark,10,16,11,7,13,8,1,FALSE,Intimidate,,Moxie
+567,Mega Heracross,Bug,Fighting,8,18,12,4,10,8,2,FALSE,Swarm,Guts,Moxie
+568,Mega Houndoom,Dark,Fire,8,9,9,14,9,12,2,FALSE,Early Bird,Flash Fire,Unnerve
+569,Mega Kangaskhan,Normal,,10,12,10,6,10,10,1,FALSE,Early Bird,Scrappy,Inner Focus
+570,Mega Latias,Dragon,Psychic,8,10,12,14,15,11,3,TRUE,Levitate,,
+571,Mega Latios,Dragon,Psychic,8,13,10,16,12,11,3,TRUE,Levitate,,
+572,Mega Lopunny,Normal,Fighting,6,14,9,5,10,14,4,FALSE,Cute Charm,Klutz,Limber
+573,Mega Lucario,Fighting,Steel,7,14,9,14,7,11,4,FALSE,Steadfast,Inner Focus,Justified
+574,Mega Manectric,Electric,,7,8,8,14,8,14,3,FALSE,Static,Lightning Rod,Minus
+575,Mega Mawile,Steel,Fairy,5,10,12,6,10,5,3,FALSE,Hyper Cutter,Intimidate,Sheer Force
+576,Mega Medicham,Fighting,Psychic,6,10,8,8,8,10,3,FALSE,Pure Power,,Telepathy
+577,Mega Metagross,Steel,Psychic,8,14,15,10,11,11,3,FALSE,Clear Body,,Light Metal
+578,Mega Mewtwo X,Psychic,Fighting,11,19,10,15,10,13,1,TRUE,Pressure,,Unnerve
+579,Mega Mewtwo Y,Psychic,,11,15,7,19,12,14,1,TRUE,Pressure,,Unnerve
+580,Mega Pidgeot,Normal,Flying,8,8,8,14,8,12,1,FALSE,Keen Eye,Tangled Feet,Big Pecks
+581,Mega Pinsir,Bug,Flying,6,16,12,6,9,10,1,FALSE,Hyper Cutter,Mold Breaker,Moxie
+582,Mega Rayquaza,Dragon,Flying,10,18,10,18,10,12,3,TRUE,Air Lock,,
+583,Mega Sableye,Dark,Ghost,5,8,12,8,12,2,3,FALSE,Keen Eye,Stall,Prankster
+584,Mega Salamence,Dragon,Flying,10,14,13,12,9,12,3,FALSE,Intimidate,,Moxie
+585,Mega Sceptile,Grass,Dragon,7,11,8,14,8,14,3,FALSE,Overgrow,,Unburden
+586,Mega Scizor,Bug,Steel,7,15,14,6,10,8,2,FALSE,Swarm,Technician,Light Metal
+587,Mega Sharpedo,Water,Dark,7,14,7,11,6,10,3,FALSE,Rough Skin,,Speed Boost
+588,Mega Slowbro,Water,Psychic,10,8,18,13,8,3,1,FALSE,Oblivious,Own Tempo,Regenerator
+589,Mega Steelix,Steel,Ground,8,12,23,6,10,3,2,FALSE,Rock Head,Sturdy,Sheer Force
+590,Mega Swampert,Water,Ground,10,15,11,10,11,7,3,FALSE,Torrent,,Damp
+591,Mega Tyranitar,Rock,Dark,10,16,15,10,12,7,2,FALSE,Sand Stream,,Unnerve
+592,Mega Venusaur,Grass,Poison,8,10,12,12,12,8,1,FALSE,Overgrow,,Chlorophyll
+593,Meganium,Grass,,8,8,10,8,10,8,2,FALSE,Overgrow,,Leaf Guard
+594,Melmetal,Steel,,14,14,14,8,6,3,7,FALSE,Iron Fist,,
+595,Meloetta Aria,Normal,Psychic,10,8,8,13,13,9,5,FALSE,Serene Grace,,
+596,Meltan,Steel,,5,6,6,6,4,3,7,FALSE,Magnet Pull,,
+597,Meowscarada,Grass,Dark,8,11,7,8,7,12,9,FALSE,Overgrow,,Protean
+598,Meowstic,Psychic,,7,5,8,8,8,10,6,FALSE,Keen Eye,Infiltrator,Prankster
+599,Meowth,Normal,,4,4,4,4,4,9,1,FALSE,Pickup,Technician,Unnerve
+600,Mesprit,Psychic,,8,10,10,10,10,8,4,TRUE,Levitate,,
+601,Metagross,Steel,Psychic,8,14,13,10,9,7,3,FALSE,Clear Body,,Light Metal
+602,Metang,Steel,Psychic,6,8,10,6,8,5,3,FALSE,Clear Body,,Light Metal
+603,Metapod,Bug,,5,2,6,2,2,3,1,FALSE,Shed Skin,,
+604,Mew,Psychic,,10,10,10,10,10,10,1,FALSE,Synchronize,,
+605,Mewtwo,Psychic,,11,11,9,15,9,13,1,TRUE,Pressure,,Unnerve
+606,Mienfoo,Fighting,,4,8,5,6,5,6,5,FALSE,Inner Focus,Regenerator,Reckless
+607,Mienshao,Fighting,,6,12,6,10,6,10,5,FALSE,Inner Focus,Regenerator,Reckless
+608,Mightyena,Dark,,7,9,7,6,6,7,3,FALSE,Intimidate,Quick Feet,Moxie
+609,Milcery,Fairy,,4,4,4,5,6,3,8,FALSE,Sweet Veil,,Aroma Veil
+610,Milotic,Water,,10,6,8,10,12,8,3,FALSE,Marvel Scale,Competitive,Cute Charm
+611,Miltank,Normal,,10,8,10,4,7,10,2,FALSE,Thick Fat,Scrappy,Sap Sipper
+612,Mime Jr,Psychic,Fairy,2,2,4,7,9,6,4,FALSE,Soundproof,Filter,Technician
+613,Mimikyu,Ghost,Fairy,6,9,8,5,10,10,7,FALSE,Disguise,,
+614,Minccino,Normal,,6,5,4,4,4,8,5,FALSE,Cute Charm,Technician,Skill Link
+615,Minior,Rock,Flying,6,6,10,6,10,6,7,FALSE,Shields Down,,
+616,Minun,Electric,,6,4,5,8,8,10,3,FALSE,Minus,,Volt Absorb
+617,Miraidon,Electric,Dragon,10,8,10,14,12,14,9,TRUE,Hadron Engine,,
+618,Misdreavus,Ghost,,6,6,6,8,8,8,2,FALSE,Levitate,,
+619,Mismagius,Ghost,,6,6,6,10,10,10,4,FALSE,Levitate,,
+620,Moltres,Fire,Flying,9,10,9,12,8,9,1,TRUE,Pressure,,Flame Body
+621,Monferno,Fire,Fighting,6,8,5,8,5,8,4,FALSE,Blaze,,Iron Fist
+622,Morelull,Grass,Fairy,4,4,6,6,8,2,7,FALSE,Illuminate,Effect Spore,Rain Dish
+623,Morgrem,Dark,Fairy,6,6,4,8,6,7,8,FALSE,Prankster,Frisk,Pickpocket
+624,Morpeko,Electric,Dark,6,10,6,7,6,10,8,FALSE,Hunger Switch,,
+625,Mothim,Bug,Flying,7,9,5,9,5,7,4,FALSE,Swarm,,Tinted Lens
+626,Mr Mime,Psychic,Fairy,4,4,6,10,12,9,1,FALSE,Soundproof,Filter,Technician
+627,Mr Rime,Ice,Psychic,8,8,8,11,10,7,8,FALSE,Tangled Feet,Screen Cleaner,Ice Body
+628,Mudbray,Ground,,7,10,7,4,6,4,7,FALSE,Own Tempo,Stamina,Inner Focus
+629,Mudkip,Water,,5,7,5,5,5,4,3,FALSE,Torrent,,Damp
+630,Mudsdale,Ground,,10,12,10,6,8,4,7,FALSE,Own Tempo,Stamina,Inner Focus
+631,Muk,Poison,,10,10,8,6,10,5,1,FALSE,Stench,Sticky Hold,Poison Touch
+632,Munchlax,Normal,,14,8,4,4,8,0,4,FALSE,Pickup,Thick Fat,Gluttony
+633,Munkidori,Poison,Psychic,9,8,7,13,9,11,9,TRUE,Toxic Chain,,Frisk
+634,Munna,Psychic,,8,2,4,7,6,2,5,FALSE,Forewarn,Synchronize,Telepathy
+635,Murkrow,Dark,Flying,6,8,4,8,4,9,2,FALSE,Insomnia,Super Luck,Prankster
+636,Musharna,Psychic,,12,6,8,11,10,3,5,FALSE,Forewarn,Synchronize,Telepathy
+637,Nacli,Rock,,6,6,8,4,4,2,9,FALSE,Purifying Salt,Sturdy,Clear Body
+638,Naclstack,Rock,,6,6,10,4,6,4,9,FALSE,Purifying Salt,Sturdy,Clear Body
+639,Naganadel,Poison,Dragon,7,7,7,13,7,12,7,FALSE,Beast Boost,,
+640,Natu,Psychic,Flying,4,5,4,7,4,7,2,FALSE,Synchronize,Early Bird,Magic Bounce
+641,Necrozma,Psychic,,10,11,10,13,9,8,7,TRUE,Prism Armor,,
+642,Nickit,Dark,,4,3,3,5,5,5,8,FALSE,Run Away,Unburden,Stakeout
+643,Nidoking,Poison,Ground,8,10,8,8,8,8,1,FALSE,Poison Point,Rivalry,Sheer Force
+644,Nidoqueen,Poison,Ground,9,9,9,8,8,8,1,FALSE,Poison Point,Rivalry,Sheer Force
+645,Nidoran,Poison,,5,6,4,4,4,5,1,FALSE,Poison Point,Rivalry,Hustle
+646,Nidorina,Poison,,7,6,7,6,6,6,1,FALSE,Poison Point,Rivalry,Hustle
+647,Nidorino,Poison,,6,7,6,6,6,6,1,FALSE,Poison Point,Rivalry,Hustle
+648,Nihilego,Rock,Poison,11,5,5,13,13,10,7,FALSE,Beast Boost,,
+649,Nincada,Bug,Ground,3,4,9,3,3,4,3,FALSE,Compound Eyes,,Run Away
+650,Ninetales,Fire,,7,8,8,8,10,10,1,FALSE,Flash Fire,,Drought
+651,Ninjask,Bug,Flying,6,9,4,5,5,16,3,FALSE,Speed Boost,,Infiltrator
+652,Noctowl,Normal,Flying,10,5,5,9,10,7,2,FALSE,Insomnia,Keen Eye,Tinted Lens
+653,Noibat,Flying,Dragon,4,3,4,4,4,6,6,FALSE,Frisk,Infiltrator,Telepathy
+654,Noivern,Flying,Dragon,8,7,8,10,8,12,6,FALSE,Frisk,Infiltrator,Telepathy
+655,Nosepass,Rock,,3,4,14,4,9,3,3,FALSE,Sturdy,Magnet Pull,Sand Force
+656,Numel,Fire,Ground,6,6,4,6,4,4,3,FALSE,Oblivious,Simple,Own Tempo
+657,Nuzleaf,Grass,Dark,7,7,4,6,4,6,3,FALSE,Chlorophyll,Early Bird,Pickpocket
+658,Nymble,Bug,,3,5,4,2,2,4,9,FALSE,Swarm,,Tinted Lens
+659,Obstagoon,Dark,Normal,9,9,10,6,8,10,8,FALSE,Reckless,Guts,Defiant
+660,Octillery,Water,,8,10,8,10,8,4,2,FALSE,Suction Cups,Sniper,Moody
+661,Oddish,Grass,Poison,4,5,6,8,6,3,1,FALSE,Chlorophyll,,Run Away
+662,Ogerpon,Grass,,8,12,8,6,10,11,9,TRUE,Defiant,,
+663,Oinkologne,Normal,,11,10,8,6,8,6,9,FALSE,Lingering Aroma,Gluttony,Thick Fat
+664,Okidogi,Poison,Fighting,9,13,12,6,9,8,9,TRUE,Toxic Chain,,Guard Dog
+665,Omanyte,Rock,Water,4,4,10,9,6,4,1,FALSE,Swift Swim,Shell Armor,Weak Armor
+666,Omastar,Rock,Water,7,6,12,12,7,6,1,FALSE,Swift Swim,Shell Armor,Weak Armor
+667,Onix,Rock,Ground,4,4,16,3,4,7,1,FALSE,Rock Head,Sturdy,Weak Armor
+668,Oranguru,Normal,Psychic,9,6,8,9,11,6,7,FALSE,Inner Focus,Telepathy,Symbiosis
+669,Orbeetle,Bug,Psychic,6,4,11,8,12,9,8,FALSE,Swarm,Frisk,Telepathy
+670,Oricorio Baile,Fire,Flying,8,7,7,10,7,9,7,FALSE,Dancer,,
+671,Orthworm,Steel,,7,8,14,6,6,6,9,FALSE,Earth Eater,,Sand Veil
+672,Oshawott,Water,,6,6,4,6,4,4,5,FALSE,Torrent,,Shell Armor
+673,Overqwil,Dark,Poison,8,12,10,6,6,8,8,FALSE,Poison Point,Swift Swim,Intimidate
+674,Pachirisu,Electric,,6,4,7,4,9,10,4,FALSE,Run Away,Pickup,Volt Absorb
+675,Palafin,Water,,10,7,7,5,6,10,9,FALSE,Zero To Hero,,
+676,Paldean Wooper,Poison,Ground,6,4,4,2,2,2,2,FALSE,Poison Point,Water Absorb,Unaware
+677,Palkia,Water,Dragon,9,12,10,15,12,10,4,TRUE,Pressure,,Telepathy
+678,Palossand,Ghost,Ground,8,8,11,10,8,4,7,FALSE,Water Compaction,,Sand Veil
+679,Palpitoad,Water,Ground,8,6,6,6,6,7,5,FALSE,Swift Swim,Hydration,Water Absorb
+680,Pancham,Fighting,,7,8,6,5,5,4,6,FALSE,Iron Fist,Mold Breaker,Scrappy
+681,Pangoro,Fighting,Dark,10,12,8,7,7,6,6,FALSE,Iron Fist,Mold Breaker,Scrappy
+682,Panpour,Water,,5,5,5,5,5,6,5,FALSE,Gluttony,,Torrent
+683,Pansage,Grass,,5,5,5,5,5,6,5,FALSE,Gluttony,,Overgrow
+684,Pansear,Fire,,5,5,5,5,5,6,5,FALSE,Gluttony,,Blaze
+685,Paras,Bug,Grass,4,7,6,4,6,2,1,FALSE,Effect Spore,Dry Skin,Damp
+686,Parasect,Bug,Grass,6,10,8,6,8,3,1,FALSE,Effect Spore,Dry Skin,Damp
+687,Passimian,Fighting,,10,12,9,4,6,8,7,FALSE,Receiver,,Defiant
+688,Patrat,Normal,,4,6,4,4,4,4,5,FALSE,Run Away,Keen Eye,Analytic
+689,Pawmi,Electric,,4,5,2,4,2,6,9,FALSE,Static,Natural Cure,Iron Fist
+690,Pawmo,Electric,Fighting,6,8,4,5,4,8,9,FALSE,Volt Absorb,Natural Cure,Iron Fist
+691,Pawmot,Electric,Fighting,7,12,7,7,6,10,9,FALSE,Volt Absorb,Natural Cure,Iron Fist
+692,Pawniard,Dark,Steel,4,8,7,4,4,6,5,FALSE,Defiant,Inner Focus,Pressure
+693,Pecharunt,Poison,Ghost,9,9,16,9,9,9,9,FALSE,Poison Puppeteer,,
+694,Pelipper,Water,Flying,6,5,10,10,7,6,3,FALSE,Keen Eye,Drizzle,Rain Dish
+695,Perrserker,Steel,,7,11,10,5,6,5,8,FALSE,Battle Armor,Tough Claws,Steely Spirit
+696,Persian,Normal,,6,7,6,6,6,12,1,FALSE,Limber,Technician,Unnerve
+697,Petilil,Grass,,4,4,5,7,5,3,5,FALSE,Chlorophyll,Own Tempo,Leaf Guard
+698,Phanpy,Ground,,9,6,6,4,4,4,2,FALSE,Pickup,,Sand Veil
+699,Phantump,Ghost,Grass,4,7,5,5,6,4,6,FALSE,Natural Cure,Frisk,Harvest
+700,Pheromosa,Bug,Fighting,7,14,4,14,4,15,7,FALSE,Beast Boost,,
+701,Phione,Water,,8,8,8,8,8,8,4,FALSE,Hydration,,
+702,Pichu,Electric,,2,4,2,4,4,6,2,FALSE,Static,,Lightning Rod
+703,Pidgeot,Normal,Flying,8,8,8,7,7,10,1,FALSE,Keen Eye,Tangled Feet,Big Pecks
+704,Pidgeotto,Normal,Flying,6,6,6,5,5,7,1,FALSE,Keen Eye,Tangled Feet,Big Pecks
+705,Pidgey,Normal,Flying,4,4,4,4,4,6,1,FALSE,Keen Eye,Tangled Feet,Big Pecks
+706,Pidove,Normal,Flying,5,6,5,4,3,4,5,FALSE,Big Pecks,Super Luck,Rivalry
+707,Pignite,Fire,Fighting,9,9,6,7,6,6,5,FALSE,Blaze,,Thick Fat
+708,Pikachu,Electric,,4,6,4,5,5,9,1,FALSE,Static,,Lightning Rod
+709,Pikipek,Normal,Flying,4,8,3,3,3,6,7,FALSE,Keen Eye,Skill Link,Pickup
+710,Piloswine,Ice,Ground,10,10,8,6,6,5,2,FALSE,Oblivious,Snow Cloak,Thick Fat
+711,Pincurchin,Electric,,5,10,10,9,8,2,8,FALSE,Lightning Rod,,Electric Surge
+712,Pineco,Bug,,5,6,9,4,4,2,2,FALSE,Sturdy,,Overcoat
+713,Pinsir,Bug,,6,12,10,6,7,8,1,FALSE,Hyper Cutter,Mold Breaker,Moxie
+714,Piplup,Water,,5,5,5,6,6,4,4,FALSE,Torrent,,Competitive
+715,Plusle,Electric,,6,5,4,8,8,10,3,FALSE,Plus,,Lightning Rod
+716,Poipole,Poison,,7,7,7,7,7,7,7,FALSE,Beast Boost,,
+717,Politoed,Water,,9,8,8,9,10,7,2,FALSE,Water Absorb,Damp,Drizzle
+718,Poliwag,Water,,4,5,4,4,4,9,1,FALSE,Water Absorb,Damp,Swift Swim
+719,Poliwhirl,Water,,6,6,6,5,5,9,1,FALSE,Water Absorb,Damp,Swift Swim
+720,Poliwrath,Water,Fighting,9,10,10,7,9,7,1,FALSE,Water Absorb,Damp,Swift Swim
+721,Poltchageist,Grass,Ghost,4,4,4,7,5,5,9,FALSE,Hospitality,,Heatproof
+722,Polteageist,Ghost,,6,6,6,13,11,7,8,FALSE,Weak Armor,,Cursed Body
+723,Ponyta,Fire,,5,8,6,6,6,9,1,FALSE,Run Away,Flash Fire,Flame Body
+724,Poochyena,Dark,,4,6,4,3,3,4,3,FALSE,Run Away,Quick Feet,Rattled
+725,Popplio,Water,,5,5,5,7,6,4,7,FALSE,Torrent,,Liquid Voice
+726,Porygon,Normal,,6,6,7,8,8,4,1,FALSE,Trace,Download,Analytic
+727,Porygon 2,Normal,,8,8,9,10,10,6,2,FALSE,Trace,Download,Analytic
+728,Porygon Z,Normal,,8,8,7,14,8,9,4,FALSE,Adaptability,Download,Analytic
+729,Primarina,Water,Fairy,8,7,7,13,12,6,7,FALSE,Torrent,,Liquid Voice
+730,Primeape,Fighting,,6,10,6,6,7,10,1,FALSE,Vital Spirit,Anger Point,Defiant
+731,Prinplup,Water,,6,7,7,8,8,5,4,FALSE,Torrent,,Competitive
+732,Probopass,Rock,Steel,6,6,14,8,15,4,4,FALSE,Sturdy,Magnet Pull,Sand Force
+733,Psyduck,Water,,5,5,5,6,5,6,1,FALSE,Damp,Cloud Nine,Swift Swim
+734,Pumpkaboo,Ghost,Grass,6,7,7,4,6,4,6,FALSE,Pickup,Frisk,Insomnia
+735,Pupitar,Rock,Ground,7,8,7,6,7,5,2,FALSE,Shed Skin,,
+736,Purrloin,Dark,,4,5,4,5,4,7,5,FALSE,Limber,Unburden,Prankster
+737,Purugly,Normal,,7,8,6,6,6,11,4,FALSE,Thick Fat,Own Tempo,Defiant
+738,Pyroar,Fire,Normal,9,7,7,11,7,11,6,FALSE,Rivalry,Unnerve,Moxie
+739,Pyukumuku,Water,,6,6,13,3,13,0,7,FALSE,Innards Out,,Unaware
+740,Quagsire,Water,Ground,10,8,8,6,6,4,2,FALSE,Damp,Water Absorb,Unaware
+741,Quaquaval,Water,Fighting,8,12,8,8,8,8,9,FALSE,Torrent,,Moxie
+742,Quaxly,Water,,6,6,4,5,4,5,9,FALSE,Torrent,,Moxie
+743,Quaxwell,Water,,7,8,6,6,6,6,9,FALSE,Torrent,,Moxie
+744,Quilava,Fire,,6,6,6,8,6,8,2,FALSE,Blaze,,Flash Fire
+745,Quilladin,Grass,,6,8,10,6,6,6,6,FALSE,Overgrow,,Bulletproof
+746,Qwilfish,Water,Poison,6,10,8,6,6,8,2,FALSE,Poison Point,Swift Swim,Intimidate
+747,Raboot,Fire,,6,9,6,6,6,9,8,FALSE,Blaze,,Libero
+748,Rabsca,Bug,Psychic,8,5,8,12,10,4,9,FALSE,Synchronize,,Telepathy
+749,Raging Bolt,Electric,Dragon,12,7,9,14,9,8,9,FALSE,Protosynthesis,,
+750,Raichu,Electric,,6,9,6,9,8,11,1,FALSE,Static,,Lightning Rod
+751,Raikou,Electric,,9,8,8,12,10,12,2,TRUE,Pressure,,Inner Focus
+752,Ralts,Psychic,Fairy,3,2,2,4,4,4,3,FALSE,Synchronize,Trace,Telepathy
+753,Rampardos,Rock,,10,16,6,6,5,6,4,FALSE,Mold Breaker,,Sheer Force
+754,Rapidash,Fire,,6,10,7,8,8,10,1,FALSE,Run Away,Flash Fire,Flame Body
+755,Raticate,Normal,,6,8,6,5,7,10,1,FALSE,Run Away,Guts,Hustle
+756,Rattata,Normal,,3,6,4,2,4,7,1,FALSE,Run Away,Guts,Hustle
+757,Rayquaza,Dragon,Flying,10,15,9,15,9,10,3,TRUE,Air Lock,,
+758,Regice,Ice,,8,5,10,10,20,5,3,TRUE,Clear Body,,Ice Body
+759,Regidrago,Dragon,,20,10,5,10,5,8,8,TRUE,Dragons Maw,,
+760,Regieleki,Electric,,8,10,5,10,5,20,8,TRUE,Transistor,,
+761,Regigigas,Normal,,11,16,11,8,11,10,4,TRUE,Slow Start,,
+762,Regirock,Rock,,8,10,20,5,10,5,3,TRUE,Clear Body,,Sturdy
+763,Registeel,Steel,,8,8,15,8,15,5,3,TRUE,Clear Body,,Light Metal
+764,Relicanth,Water,Rock,10,9,13,4,6,6,3,FALSE,Swift Swim,Rock Head,Sturdy
+765,Rellor,Bug,,4,5,6,3,6,3,9,FALSE,Compound Eyes,,Shed Skin
+766,Remoraid,Water,,4,6,4,6,4,6,2,FALSE,Hustle,Sniper,Moody
+767,Reshiram,Dragon,Fire,10,12,10,15,12,9,5,TRUE,Turboblaze,,
+768,Reuniclus,Psychic,,11,6,8,12,8,3,5,FALSE,Overcoat,Magic Guard,Regenerator
+769,Revavroom,Steel,Poison,8,12,9,5,7,9,9,FALSE,Overcoat,,Filter
+770,Rhydon,Ground,Rock,10,13,12,4,4,4,1,FALSE,Lightning Rod,Rock Head,Reckless
+771,Rhyhorn,Ground,Rock,8,8,10,3,3,2,1,FALSE,Lightning Rod,Rock Head,Reckless
+772,Rhyperior,Ground,Rock,12,14,13,6,6,4,4,FALSE,Lightning Rod,Solid Rock,Reckless
+773,Ribombee,Bug,Fairy,6,6,6,10,7,12,7,FALSE,Honey Gather,Shield Dust,Sweet Veil
+774,Rillaboom,Grass,,10,12,9,6,7,8,8,FALSE,Overgrow,,Grassy Surge
+775,Riolu,Fighting,,4,7,4,4,4,6,4,FALSE,Steadfast,Inner Focus,Prankster
+776,Roaring Moon,Dragon,Dark,10,14,7,6,10,12,9,FALSE,Protosynthesis,,
+777,Rockruff,Rock,,4,6,4,3,4,6,7,FALSE,Keen Eye,Vital Spirit,Steadfast
+778,Roggenrola,Rock,,6,8,8,2,2,2,5,FALSE,Sturdy,Weak Armor,Sand Force
+779,Rolycoly,Rock,,3,4,5,4,5,3,8,FALSE,Steam Engine,Heatproof,Flash Fire
+780,Rookidee,Flying,,4,5,4,3,4,6,8,FALSE,Keen Eye,Unnerve,Big Pecks
+781,Roselia,Grass,Poison,5,6,4,10,8,6,3,FALSE,Natural Cure,Poison Point,Leaf Guard
+782,Roserade,Grass,Poison,6,7,6,12,10,9,4,FALSE,Natural Cure,Poison Point,Technician
+783,Rotom,Electric,Ghost,5,5,8,10,8,9,4,FALSE,Levitate,,
+784,Rowlet,Grass,Flying,7,6,6,5,5,4,7,FALSE,Overgrow,,Long Reach
+785,Rufflet,Normal,Flying,7,8,5,4,5,6,5,FALSE,Keen Eye,Sheer Force,Hustle
+786,Runerigus,Ground,Ghost,6,10,14,5,10,3,8,FALSE,Wandering Spirit,,
+787,Sableye,Dark,Ghost,5,8,8,6,6,5,3,FALSE,Keen Eye,Stall,Prankster
+788,Salamence,Dragon,Flying,10,14,8,11,8,10,3,FALSE,Intimidate,,Moxie
+789,Salandit,Poison,Fire,5,4,4,7,4,8,7,FALSE,Corrosion,,Oblivious
+790,Salazzle,Poison,Fire,7,6,6,11,6,12,7,FALSE,Corrosion,,Oblivious
+791,Samurott,Water,,10,10,8,11,7,7,5,FALSE,Torrent,,Shell Armor
+792,Sandaconda,Ground,,7,11,12,6,7,7,8,FALSE,Sand Spit,Shed Skin,Sand Veil
+793,Sandile,Ground,Dark,5,7,4,4,4,6,5,FALSE,Intimidate,Moxie,Anger Point
+794,Sandshrew,Ground,,5,8,8,2,3,4,1,FALSE,Sand Veil,,Sand Rush
+795,Sandslash,Ground,,8,10,11,4,6,6,1,FALSE,Sand Veil,,Sand Rush
+796,Sandy Shocks,Electric,Ground,8,8,10,12,8,10,9,FALSE,Protosynthesis,,
+797,Sandygast,Ghost,Ground,6,6,8,7,4,2,7,FALSE,Water Compaction,,Sand Veil
+798,Sawk,Fighting,,8,12,8,3,8,8,5,FALSE,Sturdy,Inner Focus,Mold Breaker
+799,Sawsbuck,Normal,Grass,8,10,7,6,7,10,5,FALSE,Chlorophyll,Sap Sipper,Serene Grace
+800,Scatterbug,Bug,,4,4,4,3,2,4,6,FALSE,Shield Dust,Compound Eyes,Friend Guard
+801,Sceptile,Grass,,7,8,6,10,8,12,3,FALSE,Overgrow,,Unburden
+802,Scizor,Bug,Steel,7,13,10,6,8,6,2,FALSE,Swarm,Technician,Light Metal
+803,Scolipede,Bug,Poison,6,10,9,6,7,11,5,FALSE,Poison Point,Swarm,Speed Boost
+804,Scorbunny,Fire,,5,7,4,4,4,7,8,FALSE,Blaze,,Libero
+805,Scovillain,Grass,Fire,6,11,6,11,6,8,9,FALSE,Chlorophyll,Insomnia,Moody
+806,Scrafty,Dark,Fighting,6,9,12,4,12,6,5,FALSE,Shed Skin,Moxie,Intimidate
+807,Scraggy,Dark,Fighting,5,8,7,4,7,5,5,FALSE,Shed Skin,Moxie,Intimidate
+808,Scream Tail,Fairy,Psychic,12,6,10,6,12,11,9,FALSE,Protosynthesis,,
+809,Scyther,Bug,Flying,7,11,8,6,8,10,1,FALSE,Swarm,Technician,Steadfast
+810,Seadra,Water,,6,6,10,10,4,8,1,FALSE,Poison Point,Sniper,Damp
+811,Seaking,Water,,8,9,6,6,8,7,1,FALSE,Swift Swim,Water Veil,Lightning Rod
+812,Sealeo,Ice,Water,9,6,7,8,7,4,3,FALSE,Thick Fat,Ice Body,Oblivious
+813,Seedot,Grass,,4,4,5,3,3,3,3,FALSE,Chlorophyll,Early Bird,Pickpocket
+814,Seel,Water,,6,4,6,4,7,4,1,FALSE,Thick Fat,Hydration,Ice Body
+815,Seismitoad,Water,Ground,10,10,8,8,8,7,5,FALSE,Swift Swim,Poison Touch,Water Absorb
+816,Sentret,Normal,,4,5,3,4,4,2,2,FALSE,Run Away,Keen Eye,Frisk
+817,Serperior,Grass,,8,8,10,8,10,11,5,FALSE,Overgrow,,Contrary
+818,Servine,Grass,,6,6,8,6,8,8,5,FALSE,Overgrow,,Contrary
+819,Seviper,Poison,,7,10,6,10,6,6,3,FALSE,Shed Skin,,Infiltrator
+820,Sewaddle,Bug,Grass,4,5,7,4,6,4,5,FALSE,Swarm,Chlorophyll,Overcoat
+821,Sharpedo,Water,Dark,7,12,4,10,4,10,3,FALSE,Rough Skin,,Speed Boost
+822,Shaymin,Grass,,10,10,10,10,10,10,4,FALSE,Natural Cure,,
+823,Shedinja,Bug,Ghost,0,9,4,3,3,4,3,FALSE,Wonder Guard,,
+824,Shelgon,Dragon,,6,10,10,6,5,5,3,FALSE,Rock Head,,Overcoat
+825,Shellder,Water,,3,6,10,4,2,4,1,FALSE,Shell Armor,Skill Link,Overcoat
+826,Shellos,Water,,8,5,5,6,6,3,4,FALSE,Sticky Hold,Storm Drain,Sand Force
+827,Shelmet,Bug,,5,4,8,4,6,2,5,FALSE,Hydration,Shell Armor,Overcoat
+828,Shieldon,Rock,Steel,3,4,12,4,9,3,4,FALSE,Sturdy,,Soundproof
+829,Shiftry,Grass,Dark,9,10,6,9,6,8,3,FALSE,Chlorophyll,Wind Rider,Pickpocket
+830,Shiinotic,Grass,Fairy,6,4,8,9,10,3,7,FALSE,Illuminate,Effect Spore,Rain Dish
+831,Shinx,Electric,,4,6,3,4,3,4,4,FALSE,Rivalry,Intimidate,Guts
+832,Shroodle,Poison,Normal,4,6,4,4,4,8,9,FALSE,Unburden,Pickpocket,Prankster
+833,Shroomish,Grass,,6,4,6,4,6,4,3,FALSE,Effect Spore,Poison Heal,Quick Feet
+834,Shuckle,Bug,Rock,2,1,23,1,23,0,2,FALSE,Sturdy,Gluttony,Contrary
+835,Shuppet,Ghost,,4,8,4,6,3,4,3,FALSE,Insomnia,Frisk,Cursed Body
+836,Sigilyph,Psychic,Flying,7,6,8,10,8,10,5,FALSE,Wonder Skin,Magic Guard,Tinted Lens
+837,Silcoon,Bug,,5,4,6,2,2,2,3,FALSE,Shed Skin,,
+838,Silicobra,Ground,,5,6,8,4,5,5,8,FALSE,Sand Spit,Shed Skin,Sand Veil
+839,Silvally,Normal,,10,10,10,10,10,10,7,TRUE,Rks System,,
+840,Simipour,Water,,8,10,6,10,6,10,5,FALSE,Gluttony,,Torrent
+841,Simisage,Grass,,8,10,6,10,6,10,5,FALSE,Gluttony,,Overgrow
+842,Simisear,Fire,,8,10,6,10,6,10,5,FALSE,Gluttony,,Blaze
+843,Sinistcha,Grass,Ghost,7,6,11,12,8,7,9,FALSE,Hospitality,,Heatproof
+844,Sinistea,Ghost,,4,4,4,7,5,5,8,FALSE,Weak Armor,,Cursed Body
+845,Sirfetch_d,Fighting,,6,14,10,7,8,6,8,FALSE,Steadfast,,Scrappy
+846,Sizzlipede,Fire,Bug,5,6,4,5,5,4,8,FALSE,Flash Fire,White Smoke,Flame Body
+847,Skarmory,Steel,Flying,6,8,14,4,7,7,2,FALSE,Keen Eye,Sturdy,Weak Armor
+848,Skeledirge,Fire,Ghost,10,8,10,11,8,7,9,FALSE,Blaze,,Unaware
+849,Skiddo,Grass,,7,6,5,6,6,5,6,FALSE,Sap Sipper,,Grass Pelt
+850,Skiploom,Grass,Flying,6,4,5,4,6,8,2,FALSE,Chlorophyll,Leaf Guard,Infiltrator
+851,Skitty,Normal,,5,4,4,4,4,5,3,FALSE,Cute Charm,Normalize,Wonder Skin
+852,Skorupi,Poison,Bug,4,5,9,3,6,6,4,FALSE,Battle Armor,Sniper,Keen Eye
+853,Skrelp,Poison,Water,5,6,6,6,6,3,6,FALSE,Poison Point,Poison Touch,Adaptability
+854,Skuntank,Poison,Dark,10,9,7,7,6,8,4,FALSE,Stench,Aftermath,Keen Eye
+855,Skwovet,Normal,,7,6,6,4,4,2,8,FALSE,Cheek Pouch,,Gluttony
+856,Slaking,Normal,,15,16,10,10,6,10,3,FALSE,Truant,,
+857,Slakoth,Normal,,6,6,6,4,4,3,3,FALSE,Truant,,
+858,Sliggoo,Dragon,,7,8,5,8,11,6,6,FALSE,Sap Sipper,Hydration,Gooey
+859,Slither Wing,Bug,Fighting,8,14,8,8,10,8,9,FALSE,Protosynthesis,,
+860,Slowbro,Water,Psychic,10,8,11,10,8,3,1,FALSE,Oblivious,Own Tempo,Regenerator
+861,Slowking,Water,Psychic,10,8,8,10,11,3,2,FALSE,Oblivious,Own Tempo,Regenerator
+862,Slowpoke,Water,Psychic,9,6,6,4,4,2,1,FALSE,Oblivious,Own Tempo,Regenerator
+863,Slugma,Fire,,4,4,4,7,4,2,2,FALSE,Magma Armor,Flame Body,Weak Armor
+864,Slurpuff,Fairy,,8,8,9,8,8,7,6,FALSE,Sweet Veil,,Unburden
+865,Smeargle,Normal,,6,2,4,2,4,8,2,FALSE,Own Tempo,Technician,Moody
+866,Smoliv,Grass,Normal,4,4,4,6,5,3,9,FALSE,Early Bird,,Harvest
+867,Smoochum,Ice,Psychic,4,3,2,8,6,6,2,FALSE,Oblivious,Forewarn,Hydration
+868,Sneasel,Dark,Ice,6,10,6,4,8,12,2,FALSE,Inner Focus,Keen Eye,Pickpocket
+869,Sneasler,Fighting,Poison,8,13,6,4,8,12,8,FALSE,Pressure,Unburden,Poison Touch
+870,Snivy,Grass,,4,4,6,4,6,6,5,FALSE,Overgrow,,Contrary
+871,Snom,Ice,Bug,3,2,4,4,3,2,8,FALSE,Shield Dust,,Ice Scales
+872,Snorlax,Normal,,16,11,6,6,11,3,1,FALSE,Immunity,Thick Fat,Gluttony
+873,Snorunt,Ice,,5,5,5,5,5,5,3,FALSE,Inner Focus,Ice Body,Moody
+874,Snover,Grass,Ice,6,6,5,6,6,4,4,FALSE,Snow Warning,,Soundproof
+875,Snubbull,Fairy,,6,8,5,4,4,3,2,FALSE,Intimidate,Run Away,Rattled
+876,Sobble,Water,,5,4,4,7,4,7,8,FALSE,Torrent,,Sniper
+877,Solgaleo,Psychic,Steel,14,14,11,11,9,10,7,TRUE,Full Metal Body,,
+878,Solosis,Psychic,,4,3,4,10,5,2,5,FALSE,Overcoat,Magic Guard,Regenerator
+879,Solrock,Rock,Psychic,9,10,8,6,6,7,3,FALSE,Levitate,,
+880,Spearow,Normal,Flying,4,6,3,3,3,7,1,FALSE,Keen Eye,,Sniper
+881,Spectrier,Ghost,,10,6,6,14,8,13,8,TRUE,Grim Neigh,,
+882,Spewpa,Bug,,4,2,6,3,3,3,6,FALSE,Shed Skin,,Friend Guard
+883,Spheal,Ice,Water,7,4,5,6,5,2,3,FALSE,Thick Fat,Ice Body,Oblivious
+884,Spidops,Bug,,6,8,9,5,9,4,9,FALSE,Insomnia,,Stakeout
+885,Spinarak,Bug,Poison,4,6,4,4,4,3,2,FALSE,Swarm,Insomnia,Sniper
+886,Spinda,Normal,,6,6,6,6,6,6,3,FALSE,Own Tempo,Tangled Feet,Contrary
+887,Spiritomb,Ghost,Dark,5,9,11,9,11,4,4,FALSE,Pressure,,Infiltrator
+888,Spoink,Psychic,,6,2,4,7,8,6,3,FALSE,Thick Fat,Own Tempo,Gluttony
+889,Sprigatito,Grass,,4,6,5,4,4,6,9,FALSE,Overgrow,,Protean
+890,Spritzee,Fairy,,8,5,6,6,6,2,6,FALSE,Healer,,Aroma Veil
+891,Squawkabilly,Normal,Flying,8,10,5,4,5,9,9,FALSE,Intimidate,Hustle,Guts
+892,Squirtle,Water,,4,5,6,5,6,4,1,FALSE,Torrent,,Rain Dish
+893,Stakataka,Rock,Steel,6,13,21,5,10,1,7,FALSE,Beast Boost,,
+894,Stantler,Normal,,7,10,6,8,6,8,2,FALSE,Intimidate,Frisk,Sap Sipper
+895,Staraptor,Normal,Flying,8,12,7,5,6,10,4,FALSE,Intimidate,,Reckless
+896,Staravia,Normal,Flying,6,8,5,4,4,8,4,FALSE,Intimidate,,Reckless
+897,Starly,Normal,Flying,4,6,3,3,3,6,4,FALSE,Keen Eye,,Reckless
+898,Starmie,Water,Psychic,6,8,8,10,8,12,1,FALSE,Illuminate,Natural Cure,Analytic
+899,Staryu,Water,,3,4,6,7,6,8,1,FALSE,Illuminate,Natural Cure,Analytic
+900,Steelix,Steel,Ground,8,8,20,6,6,3,2,FALSE,Rock Head,Sturdy,Sheer Force
+901,Steenee,Grass,,5,4,5,4,5,6,7,FALSE,Leaf Guard,Oblivious,Sweet Veil
+902,Stonjourner,Rock,,10,12,14,2,2,7,8,FALSE,Power Spot,,
+903,Stoutland,Normal,,8,11,9,4,9,8,5,FALSE,Intimidate,Sand Rush,Scrappy
+904,Stufful,Normal,Fighting,7,8,5,4,5,5,7,FALSE,Fluffy,Klutz,Cute Charm
+905,Stunfisk,Ground,Electric,11,7,8,8,10,3,5,FALSE,Static,Limber,Sand Veil
+906,Stunky,Poison,Dark,6,6,5,4,4,7,4,FALSE,Stench,Aftermath,Keen Eye
+907,Sudowoodo,Rock,,7,10,12,3,6,3,2,FALSE,Sturdy,Rock Head,Rattled
+908,Suicune,Water,,10,8,12,9,12,8,2,TRUE,Pressure,,Inner Focus
+909,Sunflora,Grass,,8,8,6,10,8,3,2,FALSE,Chlorophyll,Solar Power,Early Bird
+910,Sunkern,Grass,,3,3,3,3,3,3,2,FALSE,Chlorophyll,Solar Power,Early Bird
+911,Surskit,Bug,Water,4,3,3,5,5,6,3,FALSE,Swift Swim,,Rain Dish
+912,Swablu,Normal,Flying,4,4,6,4,8,5,3,FALSE,Natural Cure,,Cloud Nine
+913,Swadloon,Bug,Grass,6,6,9,5,8,4,5,FALSE,Leaf Guard,Chlorophyll,Overcoat
+914,Swalot,Poison,,10,7,8,7,8,6,3,FALSE,Liquid Ooze,Sticky Hold,Gluttony
+915,Swampert,Water,Ground,10,11,9,8,9,6,3,FALSE,Torrent,,Damp
+916,Swanna,Water,Flying,8,9,6,9,6,10,5,FALSE,Keen Eye,Big Pecks,Hydration
+917,Swellow,Normal,Flying,6,8,6,8,5,12,3,FALSE,Guts,,Scrappy
+918,Swinub,Ice,Ground,5,5,4,3,3,5,2,FALSE,Oblivious,Snow Cloak,Thick Fat
+919,Swirlix,Fairy,,6,5,7,6,6,5,6,FALSE,Sweet Veil,,Unburden
+920,Swoobat,Psychic,Flying,7,6,6,8,6,11,5,FALSE,Unaware,Klutz,Simple
+921,Sylveon,Fairy,,10,6,6,11,13,6,6,FALSE,Cute Charm,,Pixilate
+922,Tadbulb,Electric,,6,3,4,6,4,4,9,FALSE,Own Tempo,Static,Damp
+923,Taillow,Normal,Flying,4,6,3,3,3,8,3,FALSE,Guts,,Scrappy
+924,Talonflame,Fire,Flying,8,8,7,7,7,13,6,FALSE,Flame Body,,Gale Wings
+925,Tandemaus,Normal,,5,5,4,4,4,8,9,FALSE,Run Away,Pickup,Own Tempo
+926,Tangela,Grass,,6,6,12,10,4,6,1,FALSE,Chlorophyll,Leaf Guard,Regenerator
+927,Tangrowth,Grass,,10,10,12,11,5,5,4,FALSE,Chlorophyll,Leaf Guard,Regenerator
+928,Tapu Bulu,Grass,Fairy,7,13,12,8,10,8,7,TRUE,Grassy Surge,,Telepathy
+929,Tapu Fini,Water,Fairy,7,8,12,10,13,8,7,TRUE,Misty Surge,,Telepathy
+930,Tapu Koko,Electric,Fairy,7,12,8,10,8,13,7,TRUE,Electric Surge,,Telepathy
+931,Tapu Lele,Psychic,Fairy,7,8,8,13,12,10,7,TRUE,Psychic Surge,,Telepathy
+932,Tarountula,Bug,,4,4,4,3,4,2,9,FALSE,Insomnia,,Stakeout
+933,Tatsugiri,Dragon,Water,7,5,6,12,10,8,9,FALSE,,,
+934,Tauros,Normal,,8,10,10,4,7,11,1,FALSE,Intimidate,Anger Point,Sheer Force
+935,Teddiursa,Normal,,6,8,5,5,5,4,2,FALSE,Pickup,Quick Feet,Honey Gather
+936,Tentacool,Water,Poison,4,4,4,5,10,7,1,FALSE,Clear Body,Liquid Ooze,Rain Dish
+937,Tentacruel,Water,Poison,8,7,6,8,12,10,1,FALSE,Clear Body,Liquid Ooze,Rain Dish
+938,Tepig,Fire,,6,6,4,4,4,4,5,FALSE,Blaze,,Thick Fat
+939,Terapagos,Normal,,9,6,8,6,8,6,9,TRUE,Tera Shift,,
+940,Terrakion,Rock,Fighting,9,13,9,7,9,11,5,TRUE,Justified,,
+941,Thievul,Dark,,7,6,6,9,9,9,8,FALSE,Run Away,Unburden,Stakeout
+942,Throh,Fighting,,12,10,8,3,8,4,5,FALSE,Guts,Inner Focus,Mold Breaker
+943,Thundurus,Electric,Flying,8,12,7,12,8,11,5,TRUE,Prankster,,Defiant
+944,Thwackey,Grass,,7,8,7,6,6,8,8,FALSE,Overgrow,,Grassy Surge
+945,Timburr,Fighting,,8,8,6,2,4,4,5,FALSE,Guts,Sheer Force,Iron Fist
+946,Ting Lu,Dark,Ground,16,11,12,6,8,4,9,TRUE,Vessel Of Ruin,,
+947,Tinkatink,Fairy,Steel,5,4,4,4,6,6,9,FALSE,Mold Breaker,Own Tempo,Pickpocket
+948,Tinkaton,Fairy,Steel,8,8,8,7,10,9,9,FALSE,Mold Breaker,Own Tempo,Pickpocket
+949,Tinkatuff,Fairy,Steel,6,6,6,4,8,8,9,FALSE,Mold Breaker,Own Tempo,Pickpocket
+950,Tirtouga,Water,Rock,5,8,10,5,4,2,5,FALSE,Solid Rock,Sturdy,Swift Swim
+951,Toedscool,Ground,Grass,4,4,4,5,10,7,9,FALSE,Mycelium Might,,
+952,Toedscruel,Ground,Grass,8,7,6,8,12,10,9,FALSE,Mycelium Might,,
+953,Togedemaru,Electric,Steel,6,10,6,4,7,10,7,FALSE,Iron Barbs,Lightning Rod,Sturdy
+954,Togekiss,Fairy,Flying,8,5,10,12,12,8,4,FALSE,Hustle,Serene Grace,Super Luck
+955,Togepi,Fairy,,4,2,6,4,6,2,2,FALSE,Hustle,Serene Grace,Super Luck
+956,Togetic,Fairy,Flying,6,4,8,8,10,4,2,FALSE,Hustle,Serene Grace,Super Luck
+957,Torchic,Fire,,4,6,4,7,5,4,3,FALSE,Blaze,,Speed Boost
+958,Torkoal,Fire,,7,8,14,8,7,2,3,FALSE,White Smoke,Drought,Shell Armor
+959,Tornadus,Flying,,8,12,7,12,8,11,5,TRUE,Prankster,,Defiant
+960,Torracat,Fire,,6,8,5,8,5,9,7,FALSE,Blaze,,Intimidate
+961,Torterra,Grass,Ground,10,11,10,8,8,6,4,FALSE,Overgrow,,Shell Armor
+962,Totodile,Water,,5,6,6,4,5,4,2,FALSE,Torrent,,Sheer Force
+963,Toucannon,Normal,Flying,8,12,8,8,8,6,7,FALSE,Keen Eye,Skill Link,Sheer Force
+964,Toxapex,Poison,Water,5,6,15,5,14,4,7,FALSE,Merciless,Limber,Regenerator
+965,Toxel,Electric,Poison,4,4,4,5,4,4,8,FALSE,Rattled,Static,Klutz
+966,Toxicroak,Poison,Fighting,8,11,6,9,6,8,4,FALSE,Anticipation,Dry Skin,Poison Touch
+967,Toxtricity,Electric,Poison,8,10,7,11,7,8,8,FALSE,Punk Rock,Plus,Technician
+968,Tranquill,Normal,Flying,6,8,6,5,4,6,5,FALSE,Big Pecks,Super Luck,Rivalry
+969,Trapinch,Ground,,4,10,4,4,4,1,3,FALSE,Hyper Cutter,Arena Trap,Sheer Force
+970,Treecko,Grass,,4,4,4,6,6,7,3,FALSE,Overgrow,,Unburden
+971,Trevenant,Ghost,Grass,8,11,8,6,8,6,6,FALSE,Natural Cure,Frisk,Harvest
+972,Tropius,Grass,Flying,10,7,8,7,9,5,3,FALSE,Chlorophyll,Solar Power,Harvest
+973,Trubbish,Poison,,5,5,6,4,6,6,5,FALSE,Stench,Sticky Hold,Aftermath
+974,Trumbeak,Normal,Flying,6,8,5,4,5,8,7,FALSE,Keen Eye,Skill Link,Pickup
+975,Tsareena,Grass,,7,12,10,5,10,7,7,FALSE,Leaf Guard,Queenly Majesty,Sweet Veil
+976,Turtonator,Fire,Dragon,6,8,14,9,8,4,7,FALSE,Shell Armor,,
+977,Turtwig,Grass,,6,7,6,4,6,3,4,FALSE,Overgrow,,Shell Armor
+978,Tympole,Water,,5,5,4,5,4,6,5,FALSE,Swift Swim,Hydration,Water Absorb
+979,Tynamo,Electric,,4,6,4,4,4,6,5,FALSE,Levitate,,
+980,Type Null,Normal,,10,10,10,10,10,6,7,TRUE,Battle Armor,,
+981,Typhlosion,Fire,,8,8,8,11,8,10,2,FALSE,Blaze,,Flash Fire
+982,Tyranitar,Rock,Dark,10,13,11,10,10,6,2,FALSE,Sand Stream,,Unnerve
+983,Tyrantrum,Rock,Dragon,8,12,12,7,6,7,6,FALSE,Strong Jaw,,Rock Head
+984,Tyrogue,Fighting,,4,4,4,4,4,4,2,FALSE,Guts,Steadfast,Vital Spirit
+985,Tyrunt,Rock,Dragon,6,9,8,4,4,5,6,FALSE,Strong Jaw,,Sturdy
+986,Umbreon,Dark,,10,6,11,6,13,6,2,FALSE,Synchronize,,Inner Focus
+987,Unfezant,Normal,Flying,8,12,8,6,6,9,5,FALSE,Big Pecks,Super Luck,Rivalry
+988,Unown,Psychic,,5,7,5,7,5,5,2,FALSE,Levitate,,
+989,Ursaluna,Ground,Normal,13,14,10,4,8,5,8,FALSE,Guts,Bulletproof,Unnerve
+990,Ursaring,Normal,,9,13,8,8,8,6,2,FALSE,Guts,Quick Feet,Unnerve
+991,Urshifu,Fighting,Dark,10,13,10,6,6,10,8,TRUE,Unseen Fist,,
+992,Uxie,Psychic,,8,8,13,8,13,10,4,TRUE,Levitate,,
+993,Vanillish,Ice,,5,6,6,8,8,6,5,FALSE,Ice Body,Snow Cloak,Weak Armor
+994,Vanillite,Ice,,4,5,5,6,6,4,5,FALSE,Ice Body,Snow Cloak,Weak Armor
+995,Vanilluxe,Ice,,7,10,8,11,10,8,5,FALSE,Ice Body,Snow Warning,Weak Armor
+996,Vaporeon,Water,,13,6,6,11,10,6,1,FALSE,Water Absorb,,Hydration
+997,Varoom,Steel,Poison,4,7,6,3,4,5,9,FALSE,Overcoat,,Slow Start
+998,Veluza,Water,Psychic,9,10,7,8,6,7,9,FALSE,Mold Breaker,,Sharpness
+999,Venipede,Bug,Poison,3,4,6,3,4,6,5,FALSE,Poison Point,Swarm,Speed Boost
+1000,Venomoth,Bug,Poison,7,6,6,9,8,9,1,FALSE,Shield Dust,Tinted Lens,Wonder Skin
+1001,Venonat,Bug,Poison,6,6,5,4,6,4,1,FALSE,Compound Eyes,Tinted Lens,Run Away
+1002,Venusaur,Grass,Poison,8,8,8,10,10,8,1,FALSE,Overgrow,,Chlorophyll
+1003,Vespiquen,Bug,Flying,7,8,10,8,10,4,4,FALSE,Pressure,,Unnerve
+1004,Vibrava,Ground,Dragon,5,7,5,5,5,7,3,FALSE,Levitate,,
+1005,Victini,Psychic,Fire,10,10,10,10,10,10,5,FALSE,Victory Star,,
+1006,Victreebel,Grass,Poison,8,10,6,10,7,7,1,FALSE,Chlorophyll,,Gluttony
+1007,Vigoroth,Normal,,8,8,8,6,6,9,3,FALSE,Vital Spirit,,
+1008,Vikavolt,Bug,Electric,8,7,9,14,8,4,7,FALSE,Levitate,,
+1009,Vileplume,Grass,Poison,8,8,8,11,9,5,1,FALSE,Chlorophyll,,Effect Spore
+1010,Virizion,Grass,Fighting,9,9,7,9,13,11,5,TRUE,Justified,,
+1011,Vivillon,Bug,Flying,8,5,5,9,5,9,6,FALSE,Shield Dust,Compound Eyes,Friend Guard
+1012,Volbeat,Bug,,6,7,8,5,8,8,3,FALSE,Illuminate,Swarm,Prankster
+1013,Volcanion,Fire,Water,8,11,12,13,9,7,6,FALSE,Water Absorb,,
+1014,Volcarona,Bug,Fire,8,6,6,14,10,10,5,FALSE,Flame Body,,Swarm
+1015,Voltorb,Electric,,4,3,5,6,6,10,1,FALSE,Soundproof,Static,Aftermath
+1016,Vullaby,Dark,Flying,7,6,8,4,6,6,5,FALSE,Big Pecks,Overcoat,Weak Armor
+1017,Vulpix,Fire,,4,4,4,5,6,6,1,FALSE,Flash Fire,,Drought
+1018,Wailmer,Water,,13,7,4,7,4,6,3,FALSE,Water Veil,Oblivious,Pressure
+1019,Wailord,Water,,17,9,4,9,4,6,3,FALSE,Water Veil,Oblivious,Pressure
+1020,Walking Wake,Water,Dragon,10,8,9,12,8,11,9,FALSE,Protosynthesis,,
+1021,Walrein,Ice,Water,11,8,9,10,9,6,3,FALSE,Thick Fat,Ice Body,Oblivious
+1022,Wartortle,Water,,6,6,8,6,8,6,1,FALSE,Torrent,,Rain Dish
+1023,Watchog,Normal,,6,8,7,6,7,8,5,FALSE,Illuminate,Keen Eye,Analytic
+1024,Wattrel,Electric,Flying,4,4,4,6,4,7,9,FALSE,Wind Power,Volt Absorb,Competitive
+1025,Weavile,Dark,Ice,7,12,6,4,8,12,4,FALSE,Pressure,,Pickpocket
+1026,Weedle,Bug,Poison,4,4,3,2,2,5,1,FALSE,Shield Dust,,Run Away
+1027,Weepinbell,Grass,Poison,6,9,5,8,4,6,1,FALSE,Chlorophyll,,Gluttony
+1028,Weezing,Poison,,6,9,12,8,7,6,1,FALSE,Levitate,Neutralizing Gas,Stench
+1029,Whimsicott,Grass,Fairy,6,7,8,8,8,12,5,FALSE,Prankster,Infiltrator,Chlorophyll
+1030,Whirlipede,Bug,Poison,4,6,10,4,8,5,5,FALSE,Poison Point,Swarm,Speed Boost
+1031,Whiscash,Water,Ground,11,8,7,8,7,6,3,FALSE,Oblivious,Anticipation,Hydration
+1032,Whismur,Normal,,6,5,2,5,2,3,3,FALSE,Soundproof,,Rattled
+1033,Wigglytuff,Normal,Fairy,14,7,4,8,5,4,1,FALSE,Cute Charm,Competitive,Frisk
+1034,Wiglett,Water,,1,6,2,4,2,10,9,FALSE,Gooey,Rattled,Sand Veil
+1035,Wimpod,Bug,Water,2,4,4,2,3,8,7,FALSE,Wimp Out,,
+1036,Wingull,Water,Flying,4,3,3,6,3,8,3,FALSE,Keen Eye,Hydration,Rain Dish
+1037,Wishiwashi,Water,,4,2,2,2,2,4,7,FALSE,Schooling,,
+1038,Wo Chien,Dark,Grass,8,8,10,10,14,7,9,TRUE,Tablets Of Ruin,,
+1039,Wobbuffet,Psychic,,19,3,6,3,6,3,2,FALSE,Shadow Tag,,Telepathy
+1040,Woobat,Psychic,Flying,6,4,4,6,4,7,5,FALSE,Unaware,Klutz,Simple
+1041,Wooloo,Normal,,4,4,6,4,4,5,8,FALSE,Fluffy,Run Away,Bulletproof
+1042,Wooper,Water,Ground,6,4,4,2,2,2,2,FALSE,Damp,Water Absorb,Unaware
+1043,Wormadam,Bug,Grass,6,6,8,8,10,4,4,FALSE,Anticipation,,Overcoat
+1044,Wugtrio,Water,,4,10,5,5,7,12,9,FALSE,Gooey,Rattled,Sand Veil
+1045,Wurmple,Bug,,4,4,4,2,3,2,3,FALSE,Shield Dust,,Run Away
+1046,Wynaut,Psychic,,10,2,5,2,5,2,3,FALSE,Shadow Tag,,Telepathy
+1047,Wyrdeer,Normal,Psychic,10,10,7,10,8,6,8,FALSE,Intimidate,Frisk,Sap Sipper
+1048,Xatu,Psychic,Flying,6,8,7,10,7,10,2,FALSE,Synchronize,Early Bird,Magic Bounce
+1049,Xerneas,Fairy,,13,13,10,13,10,10,6,TRUE,Fairy Aura,,
+1050,Xurkitree,Electric,,8,9,7,17,7,8,7,FALSE,Beast Boost,,
+1051,Yamask,Ghost,,4,3,8,6,6,3,5,FALSE,Mummy,,
+1052,Yamper,Electric,,6,4,5,4,5,3,8,FALSE,Ball Fetch,,Rattled
+1053,Yanma,Bug,Flying,6,6,4,8,4,10,2,FALSE,Speed Boost,Compound Eyes,Frisk
+1054,Yanmega,Bug,Flying,9,8,9,12,6,10,4,FALSE,Speed Boost,Tinted Lens,Frisk
+1055,Yungoos,Normal,,5,7,3,3,3,4,7,FALSE,Stakeout,Strong Jaw,Adaptability
+1056,Yveltal,Dark,Flying,13,13,10,13,10,10,6,TRUE,Dark Aura,,
+1057,Zacian,Fairy,,9,12,12,8,12,14,8,TRUE,Intrepid Sword,,
+1058,Zamazenta,Fighting,,9,12,12,8,12,14,8,TRUE,Dauntless Shield,,
+1059,Zangoose,Normal,,7,12,6,6,6,9,3,FALSE,Immunity,,Toxic Boost
+1060,Zapdos,Electric,Flying,9,9,8,12,9,10,1,TRUE,Pressure,,Static
+1061,Zarude,Dark,Grass,10,12,10,7,10,10,8,FALSE,Leaf Guard,,
+1062,Zebstrika,Electric,,8,10,6,8,6,12,5,FALSE,Lightning Rod,Motor Drive,Sap Sipper
+1063,Zekrom,Dragon,Electric,10,15,12,12,10,9,5,TRUE,Teravolt,,
+1064,Zeraora,Electric,,9,11,8,10,8,14,7,FALSE,Volt Absorb,,
+1065,Zigzagoon,Normal,,4,3,4,3,4,6,3,FALSE,Pickup,Gluttony,Quick Feet
+1066,Zoroark,Dark,,6,10,6,12,6,10,5,FALSE,Illusion,,
+1067,Zorua,Dark,,4,6,4,8,4,6,5,FALSE,Illusion,,
+1068,Zubat,Poison,Flying,4,4,4,3,4,6,1,FALSE,Inner Focus,,Infiltrator
+1069,Zweilous,Dark,Dragon,7,8,7,6,7,6,5,FALSE,Hustle,,
+1070,Zygarde,Dragon,Ground,11,10,12,8,10,10,6,TRUE,Aura Break,,
